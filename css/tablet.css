@@ -1,0 +1,44 @@
+body main .heroBannerHP .heroContent {
+  margin: 0 0 85px 0;
+  padding: 0 6%;
+}
+body main .heroBannerHP .heroContent .heroBloc1 h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+body main .heroBannerHP .heroContent .heroBloc2 p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+}
+body main .heroBannerHP .heroDesc {
+  padding: 0 6%;
+  align-self: flex-start;
+}
+body main .projetContent {
+  margin: 40px 0;
+  padding: 0 6%;
+}
+body main .projetContent .titleHP {
+  align-self: flex-start;
+}
+body main .projetContent .titleHP p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+}
+body main .projetContent .projectContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 10%;
+}
+body main .projetContent .projectContainer .projectBloc .borderImg {
+  max-width: 324px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=tablet.css.map */

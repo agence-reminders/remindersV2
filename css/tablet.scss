@@ -1,0 +1,72 @@
+@import "library";
+
+body {
+  main {
+    .heroBannerHP {
+      .heroContent {
+        margin: 0 0 85px 0;
+        padding: 0 6%;
+
+        .heroBloc1 {
+          h3 {
+            @include t18;
+
+          }
+        }
+
+        .heroBloc2 {
+          p {
+            @include t60;
+
+            &:after {
+            }
+
+          }
+        }
+      }
+
+      .heroDesc {
+        padding: 0 6%;
+        align-self: flex-start;
+
+
+      }
+    }
+
+    .projetContent {
+      margin: 40px 0;
+      padding: 0 6%;
+
+      .titleHP {
+
+        align-self: flex-start;
+
+        p {
+          @include t60;
+        }
+
+      }
+
+      .projectContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 10%;
+
+
+        .projectBloc{
+
+          .borderImg{
+            max-width: 324px;
+            width: 100%;
+
+
+            img{
+
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
