@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
 
+
   header {
     margin-bottom: 20px;
 
@@ -235,10 +236,12 @@ body {
         @include video;
       }
     }
+
     .presta {
       .heroContent {
         .heroTitle {
           margin: 135px 20px 182px 20px !important;
+
           h1 {
             @include t28;
           }
@@ -251,6 +254,7 @@ body {
         }
       }
     }
+
     .container {
       margin: 0 20px;
 
@@ -285,15 +289,25 @@ body {
             @include btn;
           }
         }
+        .splitImg{
+          @include d-flexCenter;
+          .blocA {
+            @include video;
 
-        .blocA {
-          @include video;
-          margin-bottom: 27px;
+            align-self: center;
+            margin-bottom: 27px;
+
+          }
+
+          .blocB {
+            @include video;
+            align-self: center;
+            margin-bottom: 27px;
+
+          }
         }
 
-        .blocB {
-          @include video;
-        }
+
 
         .blocC {
           margin: 127px 25px;
@@ -319,12 +333,15 @@ body {
 
 
           .blocImg {
-            background: #C04A54;
-            width: 280px;
-            height: 280px;
-            border-radius: 40px;
             @include centrage;
             margin-bottom: 92px;
+
+            img {
+              width: 280px;
+              height: 280px;
+              border-radius: 40px;
+
+            }
 
 
           }
@@ -365,7 +382,7 @@ body {
               @include t38;
             }
           }
-          
+
 
           .blocText3 {
             display: flex;
@@ -395,7 +412,8 @@ body {
               line-height: 21px;
               color: rgba(0, 0, 0, 1);
             }
-            .numberStroke{
+
+            .numberStroke {
               @include stroke;
               font-style: normal;
               font-weight: 400;
@@ -410,12 +428,16 @@ body {
 
         .blocF {
           margin: 152px 0 320px 0;
-          a{
+
+          a {
             color: #000000;
-            h3 {
-              @include t38;
-              text-align: center;
-            }
+
+
+          }
+
+          h3 {
+            @include t38;
+            text-align: center;
           }
 
 
@@ -439,15 +461,16 @@ body {
             }
           }
         }
+
         .blocImg2 {
           width: 320px;
-          height: 180px;
           background-color: rgba(248, 214, 214, 1);
           @include centrage;
           margin-bottom: 150px;
         }
       }
     }
+
     .afterLine {
       text-align: center;
 
@@ -457,23 +480,31 @@ body {
         background: rgba(0, 0, 0, 1);
       }
     }
+
     .m70 {
       @include mb70
     }
+
     /*  HP */
     .heroBannerHP {
       @include d-flexCenter;
 
       .ellipse {
+        display: block;
         align-self: center;
-        padding: 0 40px;
-        margin: 0 0 84px 0;
+        margin: 0 auto 84px auto;
+        width: 240px;
+        height: 240px;
+        overflow: hidden;
+        border-radius: 50%;
 
-        img {
-          background-color: #C04A54;
-          border-radius: 50%;
-          width: 240px;
-          height: 240px;
+
+        video {
+          height: 100%;
+          width: 100%;
+          display: inline-block;
+          vertical-align: middle;
+          object-fit: cover;
         }
 
       }
@@ -519,15 +550,18 @@ body {
         padding: 0 25px;
         margin-bottom: 115px;
         align-self: center;
-        p{
+
+        p {
           @include t20;
         }
 
       }
     }
+
     .projetContent {
       @include d-flexCenter;
       margin: 40px 25px;
+
       .titleHP {
         @include titleHP;
 
@@ -561,9 +595,6 @@ body {
             width: 100%;
 
 
-
-
-
             img {
               border-radius: 40px;
               object-fit: cover;
@@ -591,13 +622,15 @@ body {
       .projectButton {
         display: flex;
         justify-content: center;
-        margin: 25px 0 110px 0;
+        padding-top: 16%;
+        margin: 0 0 110px 0;
 
         .btnShowMore {
           @include btn
         }
       }
     }
+
     .inspiContent {
       @include d-flexCenter;
       margin: 40px 25px;
@@ -639,6 +672,7 @@ body {
         }
       }
     }
+
     /*  Work */
     .work {
       .heroContent {
@@ -677,6 +711,7 @@ body {
         }
       }
     }
+
     /*  About */
     /*  Services */
     /*  Contact */
@@ -700,10 +735,12 @@ body {
         }
       }
     }
+
     .schemaTitle {
       margin-bottom: 80px;
       @include t28;
     }
+
     .schemaContent {
       margin-bottom: 128px;
 
@@ -719,19 +756,23 @@ body {
         }
       }
     }
+
     /*  Presta2 */
-    .sm82{
+    .sm82 {
       margin-top: 0 !important;
     }
+
     /*  Presta3 */
-    .blocText5{
+    .blocText5 {
       margin-bottom: 200px;
-      h4{
+
+      h4 {
         margin: 10px 0 50px 0;
         @include t20;
         color: rgba(0, 0, 0, 0.8);
       }
-      p{
+
+      p {
         @include t20;
         color: rgba(0, 0, 0, 0.8);
       }

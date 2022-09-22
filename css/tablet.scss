@@ -17,6 +17,7 @@ body {
         .heroBloc2 {
           p {
             @include t60;
+            font-weight: 700;
 
             &:after {
             }
@@ -33,6 +34,175 @@ body {
       }
     }
 
+    .container {
+      .content {
+
+        .blocText {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+
+          .aboutTxt1 {
+            display: flex;
+            flex-direction: row;
+            padding: 300px 30px;
+
+            h2 {
+              min-width: 261px;
+              max-width: 300px;
+              padding: 0 14% 0 0;
+            }
+
+            p {
+              line-height: 150%;
+              letter-spacing: normal;
+            }
+          }
+
+          .aboutTxt2 {
+            display: flex;
+            flex-direction: column;
+            padding: 0 30px;
+
+            h2 {
+              @include t60;
+              font-weight: 400;
+            }
+          }
+
+          .aboutTxt3 {
+            display: flex;
+            flex-direction: column;
+            padding: 0 30px;
+
+            h2 {
+              @include t60;
+              font-weight: 400;
+            }
+          }
+
+          .servicesTxt1{
+            display: flex;
+            flex-direction: row;
+            padding: 300px 30px;
+
+            h2 {
+              min-width: 261px;
+              max-width: 300px;
+              padding: 0 14% 0 0;
+            }
+
+            p {
+              line-height: 150%;
+              letter-spacing: normal;
+            }
+
+          }
+
+        ;
+        }
+
+        .splitImg {
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+
+          .blocA {
+            padding: 20px 20px 40%;
+            transition: transform .4s;
+
+            img {
+              max-width: 500px;
+              object-fit: cover;
+            }
+
+          }
+
+          .blocB {
+            padding: 20px;
+            transition: transform .4s;
+
+            img {
+              max-width: 500px;
+              object-fit: cover;
+
+
+            }
+
+          }
+
+        }
+
+
+      }
+      .blocD{
+        padding: 0 15% 280px 15%;
+        .blocImg{
+          img{
+
+          }
+
+        }
+
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column-reverse !important;
+
+        .blocD {
+          display: flex;
+          flex-direction: column;
+          padding: 0 15% 280px 15%;
+
+          .blocImg {
+            align-self: flex-end;
+          }
+
+          .blocText2 {
+
+
+          }
+        }
+      }
+      .blocE{
+        padding: 0 15%;
+        .blocText{
+          justify-content: flex-start;
+          h3{
+            @include t60;
+            font-weight: 400;
+            padding-bottom: 71px;
+          }
+        }
+        .blocText3{
+          padding: 75px 0;
+          h4{
+            max-width: 300px;
+            font-weight: 600;
+            line-height: 100%;
+            letter-spacing: -.02em;
+            @include t28;
+          }
+          p{
+            max-width: 398px;
+            letter-spacing: normal;
+          }
+        }
+      }
+      .blocF{
+        margin-top: 0!important;
+        padding: 0 15%;
+        h3{
+          @include t60;
+          font-weight: 400;
+          opacity: .9;
+          letter-spacing: -.05em;
+
+        }
+      }
+    }
+
     .projetContent {
       margin: 40px 0;
       padding: 0 6%;
@@ -43,6 +213,7 @@ body {
 
         p {
           @include t60;
+          font-weight: 700;
         }
 
       }
@@ -53,14 +224,14 @@ body {
         grid-gap: 10%;
 
 
-        .projectBloc{
+        .projectBloc {
 
-          .borderImg{
+          .borderImg {
             max-width: 324px;
             width: 100%;
 
 
-            img{
+            img {
 
             }
           }
@@ -68,5 +239,23 @@ body {
         }
       }
     }
+
+    .inspiContent {
+      margin: 40px 0;
+      padding: 0 6%;
+
+      .titleHP {
+
+        align-self: center;
+
+        p {
+          @include t60;
+          font-weight: 700;
+        }
+
+
+      }
+    }
+
   }
 }

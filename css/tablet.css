@@ -10,13 +10,146 @@ body main .heroBannerHP .heroContent .heroBloc1 h3 {
 }
 body main .heroBannerHP .heroContent .heroBloc2 p {
   font-style: normal;
-  font-weight: 700;
   font-size: 60px;
   line-height: 70px;
+  font-weight: 700;
 }
 body main .heroBannerHP .heroDesc {
   padding: 0 6%;
   align-self: flex-start;
+}
+body main .container .content .blocText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+body main .container .content .blocText .aboutTxt1 {
+  display: flex;
+  flex-direction: row;
+  padding: 300px 30px;
+}
+body main .container .content .blocText .aboutTxt1 h2 {
+  min-width: 261px;
+  max-width: 300px;
+  padding: 0 14% 0 0;
+}
+body main .container .content .blocText .aboutTxt1 p {
+  line-height: 150%;
+  letter-spacing: normal;
+}
+body main .container .content .blocText .aboutTxt2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+body main .container .content .blocText .aboutTxt2 h2 {
+  font-style: normal;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 400;
+}
+body main .container .content .blocText .aboutTxt3 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+body main .container .content .blocText .aboutTxt3 h2 {
+  font-style: normal;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 400;
+}
+body main .container .content .blocText .servicesTxt1 {
+  display: flex;
+  flex-direction: row;
+  padding: 300px 30px;
+}
+body main .container .content .blocText .servicesTxt1 h2 {
+  min-width: 261px;
+  max-width: 300px;
+  padding: 0 14% 0 0;
+}
+body main .container .content .blocText .servicesTxt1 p {
+  line-height: 150%;
+  letter-spacing: normal;
+}
+body main .container .content .splitImg {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+body main .container .content .splitImg .blocA {
+  padding: 20px 20px 40%;
+  transition: transform 0.4s;
+}
+body main .container .content .splitImg .blocA img {
+  max-width: 500px;
+  object-fit: cover;
+}
+body main .container .content .splitImg .blocB {
+  padding: 20px;
+  transition: transform 0.4s;
+}
+body main .container .content .splitImg .blocB img {
+  max-width: 500px;
+  object-fit: cover;
+}
+body main .container .blocD {
+  padding: 0 15% 280px 15%;
+}
+body main .container .right {
+  display: flex;
+  flex-direction: column-reverse !important;
+}
+body main .container .right .blocD {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15% 280px 15%;
+}
+body main .container .right .blocD .blocImg {
+  align-self: flex-end;
+}
+body main .container .blocE {
+  padding: 0 15%;
+}
+body main .container .blocE .blocText {
+  justify-content: flex-start;
+}
+body main .container .blocE .blocText h3 {
+  font-style: normal;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 400;
+  padding-bottom: 71px;
+}
+body main .container .blocE .blocText3 {
+  padding: 75px 0;
+}
+body main .container .blocE .blocText3 h4 {
+  max-width: 300px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+}
+body main .container .blocE .blocText3 p {
+  max-width: 398px;
+  letter-spacing: normal;
+}
+body main .container .blocF {
+  margin-top: 0 !important;
+  padding: 0 15%;
+}
+body main .container .blocF h3 {
+  font-style: normal;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 400;
+  opacity: 0.9;
+  letter-spacing: -0.05em;
 }
 body main .projetContent {
   margin: 40px 0;
@@ -27,9 +160,9 @@ body main .projetContent .titleHP {
 }
 body main .projetContent .titleHP p {
   font-style: normal;
-  font-weight: 700;
   font-size: 60px;
   line-height: 70px;
+  font-weight: 700;
 }
 body main .projetContent .projectContainer {
   display: grid;
@@ -39,6 +172,19 @@ body main .projetContent .projectContainer {
 body main .projetContent .projectContainer .projectBloc .borderImg {
   max-width: 324px;
   width: 100%;
+}
+body main .inspiContent {
+  margin: 40px 0;
+  padding: 0 6%;
+}
+body main .inspiContent .titleHP {
+  align-self: center;
+}
+body main .inspiContent .titleHP p {
+  font-style: normal;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=tablet.css.map */
