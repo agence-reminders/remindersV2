@@ -1,0 +1,17 @@
+{
+    "theme_color": "#5A010C",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Agence Reminders",
+    "short_name": "agence.reminders",
+    "description": "Agence Web - Cognac / Troyes",
+    "icons": [
+        {
+            "src": "/android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ]
+}
