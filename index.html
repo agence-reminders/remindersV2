@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/kiona-2" rel="stylesheet">
 
 
     <title>Agence Reminders</title>
@@ -21,10 +22,11 @@
 
 <header>
     <section class="navbar">
-        <div class="bloc-right">
+
+        <div class="bloc-logo">
             <a href="index.html"><img src="img/LOGO_Reminders-02.png" alt="logo"></a>
         </div>
-        <div class="bloc-left">
+        <div class="dnone bloc-navbar">
             <nav>
                 <div id="hamburger">
                     <svg id="hamburger-menu" class="ham hamRotate ham8" viewBox="0 0 100 100" width="80"
@@ -41,7 +43,7 @@
                     <div id="hamburger-top">
                     </div>
                     <div class="content-overlay">
-                        <div class="overlayBloc">
+                        <div class="bloc-overlay">
                             <div>
                                 <h3>Menu</h3>
                             </div>
@@ -56,7 +58,7 @@
                         </div>
                     </div>
                     <div class="content-overlay-footer">
-                        <div class="overlayBloc-footer">
+                        <div class="bloc-overlay-footer">
                             <p>Entrer en contact</p>
                             <p>Info@agence-reminders.fr</p>
                         </div>
@@ -65,81 +67,105 @@
                 </div>
             </nav>
         </div>
+
     </section>
 </header>
 
 <main>
-    <section class="heroBannerHP">
-        <div class="ellipse">
-            <video playsinline="" autoplay="" muted="" preload="metadata">
-                <source src="video/video2.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="heroContent">
-            <div class="heroBloc1">
-                <h3>Nous le rendons possible</h3>
-            </div>
-            <div class="heroBloc2">
-                <p>Site internet</p>
-                <p>Applications</p>
-                <p>L'image de marque</p>
-            </div>
-        </div>
-        <div class="heroDesc">
-            <p>Agence Web avec de solide expertise en conception et<br>développement. Nous créeons des site Web prets à
-                l’emplois et<br>sur mesure, des applications mobile et élaborons des services<br>commerciaux en ligne
-            </p>
-        </div>
+    <section class="home-page-container-title">
+        <h1 class="first-title">reminders</h1>
+        <h2 class="second-title">Agence web</h2>
     </section>
-    <section class="projetContent">
-        <div class="titleHP">
-            <p>featured</p>
-            <p class="secondTitle">projects</p>
-        </div>
-        <div class="projectContainer">
-            <div class="projectBloc">
-                <div class="borderImg"><img src="img/polignac-desktop1.png" alt="image"></div>
-                <div class="projectDesc">
-                    <p><span>board</span> - Description de la board, nom de la société</p>
-                </div>
-            </div>
-            <div class="projectBloc">
-                <div class="borderImg"><img src="img/polignac-desktop1.png" alt="image"></div>
-                <div class="projectDesc">
-                    <p><span>board</span> - Description de la board, nom de la société</p>
-                </div>
-            </div>
-            <div class="projectBloc">
-                <div class="borderImg"><img src="img/polignac-desktop1.png" alt="image"></div>
-                <div class="projectDesc">
-                    <p><span>board</span> - Description de la board, nom de la société</p>
-                </div>
-            </div>
-            <div class="projectBloc">
-                <div class="borderImg"><img src="img/polignac-desktop1.png" alt="image"></div>
-                <div class="projectDesc">
-                    <p><span>board</span> - Description de la board, nom de la société</p>
-                </div>
-            </div>
-        </div>
-        <div class="projectButton">
-            <a href="html/work.html" class="btnShowMore">Voir tous les projets</a>
-        </div>
-    </section>
-    <section class="inspiContent">
-        <div class="titleHP">
-            <p>Nouvelle</p>
-            <p class="secondTitle">inpiration</p>
-        </div>
-        <div class="inspiContainer">
-            <div class="inspiBloc">
-                <div class="borderImg">
-                    <img src="img/polignac-desktop1.png" alt="image">
-                </div>
-                <div class="inspiDesc">
 
-                    <h3><i class="fa-brands fa-instagram fa-l"></i> title social</h3>
-                    <p>description de l'image</p>
+    <section class="hero-banner-home-page">
+        <div class="d-flex-home-page">
+            <img src="img/Website-Creator.gif" alt="image">
+        </div>
+        <div class="hero-container-title">
+            <div class="hero-title-HP">
+                <div class="bloc-hero-1">
+                    <h3>Nous le rendons possible</h3>
+                </div>
+                <div class="bloc-hero2">
+                    <p>Site internet</p>
+                    <p>Applications</p>
+                    <p>L'image de marque</p>
+                </div>
+            </div>
+            <div class="bloc-hero-description">
+                <p>Agence Web avec de solide expertise en conception et<br>développement. Nous créeons des site Web
+                    prets à
+                    l’emplois et<br>sur mesure, des applications mobile et élaborons des services<br>commerciaux en
+                    ligne
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projet-content">
+        <div class="container-prestation">
+            <div class="title-home-page">
+                <p class="bloc-second-title">prestation</p>
+            </div>
+            <div class="container-projet">
+                <div class="bloc-projet">
+                    <img src="img/pt1.png" alt="">
+                    <h3>Site web</h3>
+                </div>
+                <div class="bloc-projet">
+                    <img src="img/pt3.png" alt="">
+                    <h3>Application</h3>
+                </div>
+                <div class="bloc-projet">
+                    <img src="img/pt2.png" alt="">
+                    <h3>Branding</h3>
+                </div>
+            </div>
+            <div class="bloc-projet-btn dnone">
+                <a href="html/work.html" class="btn-show-more">Voir tous les projets</a>
+            </div>
+        </div>
+        <div class="container-prestation-2">
+            <img src="img/bloc-prest3.png" alt="">
+            <p>Tous les projets</p>
+        </div>
+    </section>
+
+    <section class="container-bg">
+        <img src="img/agenceR-panneau.png" alt="">
+    </section>
+
+    <section class="bloc-title-inspiration">
+        <div class="title-home-page">
+            <p>Nouvelle</p>
+            <p class="bloc-second-title">inpiration</p>
+        </div>
+        <div class="container-inspiration">
+            <div class="bloc-content-inspiration">
+                <div class="border-images">
+                    <a href="https://livemicarino.com/"><img src="img/proto1.jpeg" alt="image"></a>
+                </div>
+                <div class="bloc-description-inspiration">
+                    <h3>MICA RINO</h3>
+                    <p>by Matchbox Studio</p>
+                </div>
+            </div>
+            <div class="bloc-content-inspiration">
+                <div class="border-images">
+                    <a href="https://sfo.vc/en/"><img src="img/proto2.png" alt="image"></a>
+                </div>
+                <div class="bloc-description-inspiration">
+                    <h3>SFO</h3>
+                    <p>by Markus Brandenburg</p>
+                </div>
+            </div>
+            <div class="bloc-content-inspiration">
+                <div class="border-images">
+                    <a href="https://jonathanalpeyrie.com/"><img src="img/proto3.jpeg" alt="image"></a>
+                </div>
+                <div class="bloc-description-inspiration">
+                    <h3>Jonathan Alpeyrie</h3>
+                    <p>by DigitalDesign.NYC</p>
                 </div>
             </div>
         </div>
@@ -147,25 +173,27 @@
 </main>
 
 <footer>
-    <section class="footerTitle">
-        <div class="footerTitle_bloc">
+    <section class="footer-container-title">
+        <div class="footer-bloc-title">
             <p>Vous avez une idée ?<br>Dites nous en plus</p>
         </div>
     </section>
-    <section class="footerContent">
-        <div class="footerContent_mail ">
-            <p>sas.reminders@gmail.com</p>
+    <section class="footer-container-bottom">
+        <div class="footer-content">
+            <div class="footer-content-email ">
+                <p>sas.reminders@gmail.com</p>
+            </div>
+            <div class="footer-content-adresse">
+                <p>2 residence des chênes<br>verts,16100 Cognac</p>
+                <p>Politique de confidentialité</p>
+            </div>
         </div>
-        <div class="footerContent_adresse">
-            <p>2 residence des chênes<br>verts,16100 Cognac</p>
-            <p>Politique de confidentialité</p>
-        </div>
-    </section>
-    <section class="footerSocial">
-        <div class="footerSocial_bloc">
-            <i class="fa-brands fa-instagram fa-xl"></i>
-            <i class="fa-brands fa-linkedin fa-xl"></i>
-            <i class="fa-solid fa-envelope fa-xl"></i>
+        <div class="footer-social-container">
+            <div class="footer-social-bloc">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+                <i class="fa-solid fa-envelope fa-xl"></i>
+            </div>
         </div>
     </section>
 </footer>

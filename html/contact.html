@@ -20,13 +20,13 @@
 <body>
 <header>
     <section class="navbar">
-        <div class="bloc-right">
+        <div class="bloc-logo">
             <a href="../index.html"><img src="../img/LOGO_Reminders-02.png" alt="logo"></a>
         </div>
-        <div class="bloc-left">
+        <div class="bloc-navbar">
             <nav>
                 <div id="hamburger">
-                    <svg id="hamburger-menu" class="ham hamRotate ham8" viewBox="0 0 100 100" width="80"
+                    <svg id="hamburger-menu" class="ham ham-rotate ham8" viewBox="0 0 100 100" width="80"
                          onclick="this.classList.toggle('active')">
                         <path
                                 class="line middle"
@@ -40,7 +40,7 @@
                     <div id="hamburger-top">
                     </div>
                     <div class="content-overlay">
-                        <div class="overlayBloc">
+                        <div class="bloc-overlay">
                             <div>
                                 <h3>Menu</h3>
                             </div>
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                     <div class="content-overlay-footer">
-                        <div class="overlayBloc-footer">
+                        <div class="bloc-overlay-footer">
                             <p>Entrer en contact</p>
                             <p>Info@agence-reminders.fr</p>
                         </div>
@@ -74,30 +74,123 @@
         </div>
     </section>
     <section class="container">
-        <h2>Je m’intéresse à...</h2>
-        <form action="" method="get">
+        <form action="" method="post">
+            <div class="form-group">
+                <div class="form-title">
+                    <h2>Je m’intéresse à...</h2>
+                </div>
+                <div class="check-box-group">
+                    <div class="check-box">
+                        <label for=""><input type="text"></label>
+
+                    </div>
+                    <div class="check-box">
+                        <label for=""><input type="text"></label>
+
+                    </div>
+                    <div class="check-box">
+                        <label for=""><input type="text"></label>
+
+                    </div>
+                    <div class="check-box">
+                        <label for=""> <input type="text"></label>
+
+                    </div>
+                    <div class="check-box">
+                        <label for=""><input type="text"></label>
+
+                    </div>
+                    <div class="check-box">
+                        <label for=""><input type="text"></label>
+
+                    </div>
+                    <div class="check-box">
+                        <label for=""><input type="text"></label>
+
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Nom">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Prénom">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Parlez nous de votre projet">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-title">
+                    <h2>Budget du projet (EUR)</h2>
+                </div>
+                <div class="check-box-group">
+                   <div class="check-box">
+                       <label for=""><input type="text"></label>
+                   </div>
+                </div>
+                 <div class="check-box-group">
+                   <div class="check-box">
+                       <label for=""><input type="text"></label>
+                   </div>
+                </div>
+                 <div class="check-box-group">
+                   <div class="check-box">
+                       <label for=""><input type="text"></label>
+                   </div>
+                </div>
+                 <div class="check-box-group">
+                   <div class="check-box">
+                       <label for=""><input type="text"></label>
+                   </div>
+                </div>
+                 <div class="check-box-group">
+                   <div class="check-box">
+                       <label for=""><input type="text"></label>
+                   </div>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <div class="input-box">
+                    <input type="file" placeholder="Ajouter une pièce jointe">
+                </div>
+            </div>
+            <div class="form-submit">
+                <button>Envoyer une demande</button>
+
+            </div>
+            <div class="form-politique">
+                <p>Ce site est protégé par reCAPTCHA et la politique de confidentialité et les conditions d’utilisation de Google s’appliquent</p>
+            </div>
+
 
         </form>
     </section>
 </main>
 
 <footer>
-    <section class="footerTitle">
-        <div class="footerTitle_bloc">
+    <section class="footer-container-title">
+        <div class="footer-bloc-title">
             <p>Vous avez une idée ?<br>Dites nous en plus</p>
         </div>
     </section>
-    <section class="footerContent">
-        <div class="footerContent_mail ">
+    <section class="footer-content">
+        <div class="footer-content-email ">
             <p>sas.reminders@gmail.com</p>
         </div>
-        <div class="footerContent_adresse">
+        <div class="footer-content-adresse">
             <p>2 residence des chênes<br>verts,16100 Cognac</p>
             <p>Politique de confidentialité</p>
         </div>
     </section>
-    <section class="footerSocial">
-        <div class="footerSocial_bloc">
+    <section class="footer-social-container">
+        <div class="footer-social-bloc">
             <i class="fa-brands fa-instagram fa-xl"></i>
             <i class="fa-brands fa-linkedin fa-xl"></i>
             <i class="fa-solid fa-envelope fa-xl"></i>

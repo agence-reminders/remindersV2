@@ -1,65 +1,83 @@
-@mixin line{
+@mixin line {
   content: "";
   display: block;
   position: absolute;
   height: 1px;
 }
+
 @mixin d-flexCenter {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-@mixin heroH1{
+
+@mixin heroH1 {
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 42px;
   color: #000000;
 }
-@mixin mb70{
+
+@mixin mb70 {
   margin-bottom: 70px;
 }
-@mixin t14{
+
+@mixin t14 {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #000000;
 }
-@mixin t18{
+
+@mixin t18 {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
-@mixin t20{
+
+@mixin t20 {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
 }
-@mixin t28{
+
+@mixin t28 {
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 33px;
 }
-@mixin t38{
+
+@mixin t38 {
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
   line-height: 45px;
 }
+
+@mixin t40 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+}
+
 @mixin t60 {
   font-style: normal;
   font-size: 60px;
   line-height: 70px;
 }
-@mixin stroke{
+
+@mixin stroke {
   color: #FFFFFF;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
+
 @mixin video {
   width: 100%;
 }
@@ -68,10 +86,6 @@
 @mixin imgHP {
   align-self: center;
   margin-bottom: 48px;
-  img {
-
-    border-radius: 40px;
-  }
 }
 
 @mixin centrage {
@@ -82,7 +96,7 @@
 
 @mixin titleHP {
   align-self: center;
-  margin-bottom: 160px;
+  margin-bottom: 50px;
 }
 
 @mixin inTitle {

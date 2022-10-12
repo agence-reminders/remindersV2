@@ -6,61 +6,63 @@ body {
 body header {
   margin-bottom: 20px;
 }
+body header .dnone {
+  display: none !important;
+}
 body header .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
-body header .navbar .bloc-right {
+body header .navbar .bloc-logo {
   display: flex;
-  justify-content: right;
+  margin: auto;
 }
-body header .navbar .bloc-left {
+body header .navbar .bloc-navbar {
   display: flex;
-  justify-content: left;
+  align-items: center;
 }
-body header .navbar .bloc-left nav {
+body header .navbar .bloc-navbar nav {
   /*  overlay */
   /*     overlay end  */
   /*  Hamburger   */
   /*  bouton */
   /*  bouton end  */
 }
-body header .navbar .bloc-left nav .dnone {
+body header .navbar .bloc-navbar nav .dnone {
   display: none;
 }
-body header .navbar .bloc-left nav #hamburger {
+body header .navbar .bloc-navbar nav #hamburger {
   position: relative;
   z-index: 99;
 }
-body header .navbar .bloc-left nav #overlay-menu-hamburger {
+body header .navbar .bloc-navbar nav #overlay-menu-hamburger {
   position: fixed;
-  left: 0;
+  right: 0;
   top: 0;
   z-index: 98;
   background-color: #FFFFFF;
   height: 100%;
-  width: 100%;
+  width: 60%;
 }
-body header .navbar .bloc-left nav .overlay-mobile {
+body header .navbar .bloc-navbar nav .overlay-mobile {
   list-style: none;
   padding: 20px 0 0;
   margin: 0;
   background-color: #FFFFFF;
   height: 100%;
 }
-body header .navbar .bloc-left nav .overlay-mobile #hamburger-top {
+body header .navbar .bloc-navbar nav .overlay-mobile #hamburger-top {
   color: #000;
   background-color: #FFFFFF;
   padding: 24px;
 }
-body header .navbar .bloc-left nav .overlay-mobile #hamburger-top span {
+body header .navbar .bloc-navbar nav .overlay-mobile #hamburger-top span {
   margin: 35px;
   padding-left: 20px;
   font-weight: bold;
   font-size: 23px;
 }
-body header .navbar .bloc-left nav .overlay-mobile .content-overlay {
+body header .navbar .bloc-navbar nav .overlay-mobile .content-overlay {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,25 +70,22 @@ body header .navbar .bloc-left nav .overlay-mobile .content-overlay {
   margin-top: 46px;
   padding-left: 42px;
 }
-body header .navbar .bloc-left nav .overlay-mobile .content-overlay .overlayBloc h3 {
+body header .navbar .bloc-navbar nav .overlay-mobile .content-overlay .bloc-overlay h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: rgb(217, 217, 217);
 }
-body header .navbar .bloc-left nav .overlay-mobile .content-overlay .overlayBloc ul {
+body header .navbar .bloc-navbar nav .overlay-mobile .content-overlay .bloc-overlay ul {
   padding-inline-start: 0;
 }
-body header .navbar .bloc-left nav .overlay-mobile .content-overlay .overlayBloc ul li {
+body header .navbar .bloc-navbar nav .overlay-mobile .content-overlay .bloc-overlay ul li {
   padding: 15px 0;
   width: 100%;
   margin: 0 0 20px 0;
 }
-body header .navbar .bloc-left nav .overlay-mobile .content-overlay .overlayBloc ul li:last-child {
-  margin-top: 56px;
-}
-body header .navbar .bloc-left nav .overlay-mobile .content-overlay .overlayBloc ul li a {
+body header .navbar .bloc-navbar nav .overlay-mobile .content-overlay .bloc-overlay ul li a {
   transition: all 0.3s ease 0.3ms;
   padding: 0;
   color: #000000;
@@ -95,7 +94,7 @@ body header .navbar .bloc-left nav .overlay-mobile .content-overlay .overlayBloc
   font-size: 38px;
   line-height: 46px;
 }
-body header .navbar .bloc-left nav .overlay-mobile .content-overlay-footer {
+body header .navbar .bloc-navbar nav .overlay-mobile .content-overlay-footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,7 +102,7 @@ body header .navbar .bloc-left nav .overlay-mobile .content-overlay-footer {
   margin-top: 46px;
   padding-left: 42px;
 }
-body header .navbar .bloc-left nav .overlay-mobile .content-overlay-footer .overlayBloc-footer p {
+body header .navbar .bloc-navbar nav .overlay-mobile .content-overlay-footer .bloc-overlay-footer p {
   color: rgb(217, 217, 217);
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -112,11 +111,11 @@ body header .navbar .bloc-left nav .overlay-mobile .content-overlay-footer .over
   line-height: 19px;
   align-items: center;
 }
-body header .navbar .bloc-left nav .overlay-mobile .content-overlay-footer .overlayBloc-footer p:last-child {
+body header .navbar .bloc-navbar nav .overlay-mobile .content-overlay-footer .bloc-overlay-footer p:last-child {
   color: rgb(0, 0, 0);
   margin-top: 30px;
 }
-body header .navbar .bloc-left nav .overlay-mobile .content-overlay-footer .overlayBloc-footer p:last-child:after {
+body header .navbar .bloc-navbar nav .overlay-mobile .content-overlay-footer .bloc-overlay-footer p:last-child:after {
   content: "";
   display: block;
   position: absolute;
@@ -124,7 +123,7 @@ body header .navbar .bloc-left nav .overlay-mobile .content-overlay-footer .over
   width: 170px;
   background-color: #000000;
 }
-body header .navbar .bloc-left nav .ham {
+body header .navbar .bloc-navbar nav .ham {
   -webkit-tap-highlight-color: #000;
   transition: transform 400ms;
   -moz-user-select: none;
@@ -132,42 +131,42 @@ body header .navbar .bloc-left nav .ham {
   -ms-user-select: none;
   user-select: none;
 }
-body header .navbar .bloc-left nav .hamRotate.active {
+body header .navbar .bloc-navbar nav .ham-rotate.active {
   transform: rotate(45deg);
 }
-body header .navbar .bloc-left nav .hamRotate180.active {
+body header .navbar .bloc-navbar nav .hamRotate180.active {
   transform: rotate(180deg);
 }
-body header .navbar .bloc-left nav .line {
+body header .navbar .bloc-navbar nav .line {
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
   stroke: #000000;
   stroke-width: 1.5;
   stroke-linecap: square;
 }
-body header .navbar .bloc-left nav .ham8 .top {
+body header .navbar .bloc-navbar nav .ham8 .top {
   stroke-dasharray: 40, 160;
 }
-body header .navbar .bloc-left nav .ham8 .middle {
+body header .navbar .bloc-navbar nav .ham8 .middle {
   stroke-dasharray: 40, 142;
   transform-origin: 50%;
   transition: transform 400ms;
 }
-body header .navbar .bloc-left nav .ham8 .bottom {
+body header .navbar .bloc-navbar nav .ham8 .bottom {
   stroke-dasharray: 40, 85;
   transform-origin: 50%;
   transition: transform 400ms, stroke-dashoffset 400ms;
 }
-body header .navbar .bloc-left nav .ham8.active .top {
+body header .navbar .bloc-navbar nav .ham8.active .top {
   stroke-dashoffset: -64px;
 }
-body header .navbar .bloc-left nav .ham8.active .middle {
+body header .navbar .bloc-navbar nav .ham8.active .middle {
   transform: rotate(90deg);
 }
-body header .navbar .bloc-left nav .ham8.active .bottom {
+body header .navbar .bloc-navbar nav .ham8.active .bottom {
   stroke-dashoffset: -64px;
 }
-body header .navbar .bloc-left nav #overlay-menu {
+body header .navbar .bloc-navbar nav #overlay-menu {
   display: none;
 }
 body main {
@@ -184,27 +183,56 @@ body main {
   /*  Presta2 */
   /*  Presta3 */
 }
-body main .heroBanner {
+body main .dnone {
+  display: none !important;
+}
+body main .home-page-container-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #AD1327;
+}
+body main .home-page-container-title .first-title {
+  font-family: "Kiona", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 240px;
+  text-transform: uppercase;
+}
+body main .home-page-container-title .second-title {
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 182px;
+  position: relative;
+  top: -175px;
+  color: #581116;
+}
+body main .hero-Banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body main .heroBanner .heroContent {
+body main .hero-Banner .hero-title-HP {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body main .heroBanner .heroContent .heroTitle {
+body main .hero-Banner .hero-title-HP .hero-title {
   margin: 135px 58px 182px 58px;
 }
-body main .heroBanner .heroContent .heroTitle h1 {
+body main .hero-Banner .hero-title-HP .hero-title h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 42px;
   color: #000000;
 }
-body main .heroBanner .heroVideo {
+body main .hero-Banner .hero-video {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,21 +240,21 @@ body main .heroBanner .heroVideo {
   align-self: center;
   width: 100%;
 }
-body main .presta .heroContent .heroTitle {
+body main .bloc-prestation .hero-title-HP .hero-title {
   margin: 135px 20px 182px 20px !important;
 }
-body main .presta .heroContent .heroTitle h1 {
+body main .bloc-prestation .hero-title-HP .hero-title h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 33px;
+  margin-bottom: 50px;
 }
-body main .presta .heroContent .heroTitle h2 {
+body main .bloc-prestation .hero-title-HP .hero-title p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
-  margin-bottom: 50px;
 }
 body main .container {
   margin: 0 20px;
@@ -235,146 +263,152 @@ body main .container .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 6%;
 }
-body main .container .content .blocText {
-  margin: 185px 0;
+body main .container .content .bloc-text {
+  margin: 80px 0;
 }
-body main .container .content .blocText h2 {
+body main .container .content .bloc-text .bloc-services-text-1 {
+  margin: 0 10px;
+}
+body main .container .content .bloc-text h2 {
   margin-bottom: 56px;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
 }
-body main .container .content .blocText h3 {
+body main .container .content .bloc-text h3 {
   font-style: normal;
   margin-bottom: 62px;
   font-weight: 400;
   font-size: 36px;
   line-height: 42px;
 }
-body main .container .content .blocText P {
+body main .container .content .bloc-text P {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
 }
-body main .container .content .blocText a {
+body main .container .content .bloc-text a {
+  display: inline-flex;
   border-radius: 40px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 12px 34px;
   color: rgb(0, 0, 0);
   background-color: #FFFFFF;
 }
-body main .container .content .splitImg {
+body main .container .content .bloc-split-images {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body main .container .content .splitImg .blocA {
+body main .container .content .bloc-split-images .bloc-a {
   width: 100%;
   align-self: center;
   margin-bottom: 27px;
 }
-body main .container .content .splitImg .blocB {
+body main .container .content .bloc-split-images .bloc-b {
   width: 100%;
   align-self: center;
   margin-bottom: 27px;
 }
-body main .container .content .blocC {
-  margin: 127px 25px;
+body main .container .content .bloc-c {
+  margin: 80px 25px 15px;
 }
-body main .container .content .blocC .counter {
-  margin-bottom: 65px;
+body main .container .content .bloc-c .bloc-counter {
+  margin-bottom: 50px;
 }
-body main .container .content .blocC .counter p {
+body main .container .content .bloc-c .bloc-counter p {
   text-align: center;
   font-size: 20px;
   line-height: 23px;
 }
-body main .container .content .blocC .counter p:first-child {
+body main .container .content .bloc-c .bloc-counter p:first-child {
   margin-bottom: 14px;
   font-size: 50px;
   line-height: 59px;
 }
-body main .container .content .blocD .blocImg {
+body main .container .content .bloc-f {
+  margin-bottom: 100px;
+}
+body main .container .content .bloc-f .bloc-text-2 {
+  max-width: 300px;
+}
+body main .container .content .bloc-f .bloc-image {
   justify-content: center;
   align-self: center;
-  margin-bottom: 92px;
+  margin-bottom: 50px;
 }
-body main .container .content .blocD .blocImg img {
-  width: 280px;
-  height: 280px;
+body main .container .content .bloc-f .bloc-image img {
+  width: 100%;
+  max-width: 280px;
   border-radius: 40px;
 }
-body main .container .content .blocD .blocText2 {
-  margin: 120px 10px;
+body main .container .content .bloc-f .bloc-text-2 {
   font-style: normal;
 }
-body main .container .content .blocD .blocText2 h3 {
+body main .container .content .bloc-f .bloc-text-2 h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
   line-height: 45px;
   font-weight: 700;
-  margin-bottom: 46px;
+  margin-bottom: 30px;
 }
-body main .container .content .blocD .blocText2 p {
+body main .container .content .bloc-f .bloc-text-2 p {
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
-body main .container .content .blocD .blocText2 a {
+body main .container .content .bloc-f .bloc-text-2 a {
+  display: inline-flex;
   border-radius: 40px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 12px 34px;
   color: rgb(0, 0, 0);
   background-color: #FFFFFF;
 }
-body main .container .content .blocE {
-  margin-bottom: 200px;
+body main .container .content .bloc-e .bloc-text {
+  margin: 0 0 80px 0;
 }
-body main .container .content .blocE .blocText {
-  margin: 82px 0;
-}
-body main .container .content .blocE .blocText .h3 {
-  margin-bottom: 82px;
+body main .container .content .bloc-e .bloc-text .h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
   line-height: 45px;
 }
-body main .container .content .blocE .blocText3 {
+body main .container .content .bloc-e .bloc-text-3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-style: normal;
   font-weight: 400;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
-body main .container .content .blocE .blocText3 img {
-  background: #D9D9D9;
+body main .container .content .bloc-e .bloc-text-3 img {
+  background: #FFFFFF;
   width: 147px;
-  height: 147px;
-  margin-bottom: 65px;
+  margin-bottom: 30px;
 }
-body main .container .content .blocE .blocText3 h4 {
+body main .container .content .bloc-e .bloc-text-3 h4 {
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 33px;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
   color: rgb(0, 0, 0);
 }
-body main .container .content .blocE .blocText3 p {
+body main .container .content .bloc-e .bloc-text-3 p {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: rgb(0, 0, 0);
 }
-body main .container .content .blocE .blocText3 .numberStroke {
+body main .container .content .bloc-e .bloc-text-3 .number-stroke {
   color: #FFFFFF;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -385,35 +419,34 @@ body main .container .content .blocE .blocText3 .numberStroke {
   color: #FFFFFF;
   margin-bottom: 30px;
 }
-body main .container .content .blocF {
-  margin: 152px 0 320px 0;
+body main .container .content .bloc-f {
+  margin: 0 0 120px 0;
 }
-body main .container .content .blocF a {
+body main .container .content .bloc-f a {
   color: #000000;
 }
-body main .container .content .blocF h3 {
+body main .container .content .bloc-f h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
   line-height: 45px;
-  text-align: center;
 }
-body main .container .content .blocG {
+body main .container .content .bloc-g {
   margin-bottom: 200px;
 }
-body main .container .content .blocG h3 {
+body main .container .content .bloc-g h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
   line-height: 45px;
   margin-bottom: 82px;
 }
-body main .container .content .blocG .navContent {
+body main .container .content .bloc-g .bloc-content-nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body main .container .content .blocG .navContent a {
+body main .container .content .bloc-g .bloc-content-nav a {
   margin-bottom: 68px;
   color: #000000;
   font-style: normal;
@@ -421,77 +454,16 @@ body main .container .content .blocG .navContent a {
   font-size: 20px;
   line-height: 23px;
 }
-body main .container .content .blocImg2 {
+body main .container .content .bloc-image-2 {
   width: 320px;
   background-color: rgb(248, 214, 214);
   justify-content: center;
   align-self: center;
-  margin-bottom: 150px;
 }
-body main .afterLine {
+body main .bloc-after-line {
   text-align: center;
 }
-body main .afterLine:after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 1px;
-  width: 275px;
-  background: rgb(0, 0, 0);
-}
-body main .m70 {
-  margin-bottom: 70px;
-}
-body main .heroBannerHP {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-body main .heroBannerHP .ellipse {
-  display: block;
-  align-self: center;
-  margin: 0 auto 84px auto;
-  width: 240px;
-  height: 240px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-body main .heroBannerHP .ellipse video {
-  height: 100%;
-  width: 100%;
-  display: inline-block;
-  vertical-align: middle;
-  object-fit: cover;
-}
-body main .heroBannerHP .heroContent {
-  margin: 0 25px 85px 25px;
-}
-body main .heroBannerHP .heroContent .heroBloc1 {
-  margin-bottom: 10px;
-}
-body main .heroBannerHP .heroContent .heroBloc1 h3 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #000000;
-}
-body main .heroBannerHP .heroContent .heroBloc2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: min-content;
-}
-body main .heroBannerHP .heroContent .heroBloc2 p {
-  font-weight: 700;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 38px;
-  line-height: 45px;
-  align-items: center;
-  color: #000000;
-}
-body main .heroBannerHP .heroContent .heroBloc2 p:after {
+body main .bloc-after-line:after {
   content: "";
   display: block;
   position: absolute;
@@ -501,28 +473,78 @@ body main .heroBannerHP .heroContent .heroBloc2 p:after {
   background-color: black;
   margin-bottom: 20px;
 }
-body main .heroBannerHP .heroDesc {
+body main .m70 {
+  margin-bottom: 70px;
+}
+body main .hero-banner-home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main .hero-banner-home-page .ellipse {
+  display: block;
+  align-self: center;
+  margin: 0 auto 84px auto;
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+body main .hero-banner-home-page .ellipse video {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: cover;
+}
+body main .hero-banner-home-page .hero-title-HP {
+  margin: 0 25px 25px;
+}
+body main .hero-banner-home-page .hero-title-HP .bloc-hero-1 {
+  margin-bottom: 10px;
+}
+body main .hero-banner-home-page .hero-title-HP .bloc-hero-1 h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+body main .hero-banner-home-page .hero-title-HP .bloc-hero2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+body main .hero-banner-home-page .hero-title-HP .bloc-hero2 p {
+  font-weight: 700;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 45px;
+  color: #000000;
+}
+body main .hero-banner-home-page .bloc-hero-description {
   padding: 0 25px;
   margin-bottom: 115px;
   align-self: center;
 }
-body main .heroBannerHP .heroDesc p {
+body main .hero-banner-home-page .bloc-hero-description p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
 }
-body main .projetContent {
+body main .projet-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 40px 25px;
 }
-body main .projetContent .titleHP {
+body main .projet-content .title-home-page {
   align-self: center;
-  margin-bottom: 160px;
+  margin-bottom: 50px;
 }
-body main .projetContent .titleHP p {
+body main .projet-content .title-home-page p {
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
@@ -531,19 +553,19 @@ body main .projetContent .titleHP p {
   color: #000000;
   mix-blend-mode: normal;
 }
-body main .projetContent .titleHP .secondTitle {
+body main .projet-content .title-home-page .bloc-second-title {
   color: #FFFFFF;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
-body main .projetContent .projectContainer {
+body main .projet-content .container-projet {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
   padding: 0 10%;
 }
-body main .projetContent .projectContainer .projectBloc {
+body main .projet-content .container-projet .bloc-content-projet {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -552,47 +574,48 @@ body main .projetContent .projectContainer .projectBloc {
   width: 100%;
   max-width: 300px;
 }
-body main .projetContent .projectContainer .projectBloc .borderImg {
+body main .projet-content .container-projet .bloc-content-projet .border-images {
   max-width: 280px;
   width: 100%;
 }
-body main .projetContent .projectContainer .projectBloc .borderImg img {
+body main .projet-content .container-projet .bloc-content-projet .border-images img {
   border-radius: 40px;
   object-fit: cover;
 }
-body main .projetContent .projectContainer .projectBloc .projectDesc {
+body main .projet-content .container-projet .bloc-content-projet .bloc-projet-description {
   display: flex;
   align-self: center;
   justify-content: center;
   text-align: center;
+  padding-top: 25px;
 }
-body main .projetContent .projectContainer .projectBloc .projectDesc p span {
+body main .projet-content .container-projet .bloc-content-projet .bloc-projet-description p span {
   font-weight: bold;
 }
-body main .projetContent .projectButton {
+body main .projet-content .bloc-projet-btn {
   display: flex;
   justify-content: center;
-  padding-top: 16%;
-  margin: 0 0 110px 0;
+  padding-top: 25px;
+  margin: 0 0 50px 0;
 }
-body main .projetContent .projectButton .btnShowMore {
+body main .projet-content .bloc-projet-btn .btn-show-more {
   border-radius: 40px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 12px 34px;
   color: rgb(0, 0, 0);
   background-color: #FFFFFF;
 }
-body main .inspiContent {
+body main .bloc-title-inspiration {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 40px 25px;
 }
-body main .inspiContent .titleHP {
+body main .bloc-title-inspiration .title-home-page {
   align-self: center;
-  margin-bottom: 160px;
+  margin-bottom: 50px;
 }
-body main .inspiContent .titleHP p {
+body main .bloc-title-inspiration .title-home-page p {
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
@@ -601,57 +624,54 @@ body main .inspiContent .titleHP p {
   color: #000000;
   mix-blend-mode: normal;
 }
-body main .inspiContent .titleHP .secondTitle {
+body main .bloc-title-inspiration .title-home-page .bloc-second-title {
   color: #FFFFFF;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
-body main .inspiContent .inspiContainer .inspiBloc {
+body main .bloc-title-inspiration .container-inspiration .bloc-content-inspiration {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   margin-bottom: 40px;
 }
-body main .inspiContent .inspiContainer .inspiBloc .borderImg {
+body main .bloc-title-inspiration .container-inspiration .bloc-content-inspiration .border-images {
   align-self: center;
   margin-bottom: 48px;
 }
-body main .inspiContent .inspiContainer .inspiBloc .borderImg img {
-  border-radius: 40px;
-}
-body main .inspiContent .inspiContainer .inspiBloc .borderImg img {
+body main .bloc-title-inspiration .container-inspiration .bloc-content-inspiration .border-images img {
   width: 256px;
   height: 256px;
 }
-body main .inspiContent .inspiContainer .inspiBloc .inspiDesc {
-  text-align: center;
+body main .bloc-title-inspiration .container-inspiration .bloc-content-inspiration .bloc-description-inspiration {
+  text-align: start;
   align-items: center;
 }
-body main .work .heroContent {
-  margin: 135px 12px 182px 12px;
+body main .work .hero-title-HP {
+  margin: 135px 12px 100px 12px;
 }
-body main .work .heroContent .heroTitle1 {
+body main .work .hero-title-HP .hero-title-1 {
   margin-bottom: 25px;
 }
-body main .work .heroContent .heroTitle1 h2 {
+body main .work .hero-title-HP .hero-title-1 h2 {
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
   color: rgba(30, 30, 30, 0.5);
 }
-body main .work .heroContent .heroTitle2 {
+body main .work .hero-title-HP .hero-title-2 {
   margin-bottom: 30px;
 }
-body main .work .heroContent .heroTitle2 h1 {
+body main .work .hero-title-HP .hero-title-2 h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 42px;
   line-height: 49px;
   color: #000000;
 }
-body main .work .heroContent .heroTitle2 h1:after {
+body main .work .hero-title-HP .hero-title-2 h1:after {
   content: "";
   display: block;
   position: absolute;
@@ -660,36 +680,51 @@ body main .work .heroContent .heroTitle2 h1:after {
   background-color: black;
   margin-top: 5px;
 }
-body main .projetContent .blocText4 {
+body main .contactTitle {
+  padding: 0 6%;
+  margin-bottom: 42px;
+}
+body main .contactTitle .innerTitle {
+  display: flex;
+  justify-content: flex-start;
+}
+body main .contactTitle .innerTitle h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 45px;
+  margin-bottom: 38px;
+}
+body main .projet-content .bloc-text-4 {
   margin-bottom: 105px;
 }
-body main .projetContent .blocText4 h3 {
+body main .projet-content .bloc-text-4 h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
   line-height: 45px;
   margin-bottom: 55px;
 }
-body main .projetContent .blocText4 p {
+body main .projet-content .bloc-text-4 p {
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
 }
-body main .schemaTitle {
-  margin-bottom: 80px;
+body main .bloc-schema-title {
+  margin: 80px 0;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 33px;
 }
-body main .schemaContent {
+body main .bloc-content-schema {
   margin-bottom: 128px;
 }
-body main .schemaContent ol {
+body main .bloc-content-schema ol {
   padding-inline-start: 30px;
 }
-body main .schemaContent ol li {
+body main .bloc-content-schema ol li {
   list-style: decimal;
   font-style: normal;
   font-weight: 400;
@@ -699,18 +734,20 @@ body main .schemaContent ol li {
 body main .sm82 {
   margin-top: 0 !important;
 }
-body main .blocText5 {
-  margin-bottom: 200px;
+body main .bloc-text-5 {
+  margin: 80px 0;
+  padding: 0 15%;
 }
-body main .blocText5 h4 {
+body main .bloc-text-5 h4 {
   margin: 10px 0 50px 0;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
+  font-weight: 600;
   color: rgba(0, 0, 0, 0.8);
 }
-body main .blocText5 p {
+body main .bloc-text-5 p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -722,18 +759,18 @@ body footer {
   color: #FFFFFF;
   padding-top: 94px;
 }
-body footer .footerTitle {
+body footer .footer-container-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 135px;
   align-self: center;
 }
-body footer .footerTitle .footerTitle_bloc {
+body footer .footer-container-title .footer-bloc-title {
   align-self: center;
   width: 280px;
 }
-body footer .footerTitle .footerTitle_bloc p {
+body footer .footer-container-title .footer-bloc-title p {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -741,7 +778,7 @@ body footer .footerTitle .footerTitle_bloc p {
   line-height: 35px;
   text-align: center;
 }
-body footer .footerTitle .footerTitle_bloc p:after {
+body footer .footer-container-title .footer-bloc-title p:after {
   content: "";
   display: block;
   position: absolute;
@@ -750,18 +787,18 @@ body footer .footerTitle .footerTitle_bloc p:after {
   background-color: #FFFFFF;
   margin: 25px 0;
 }
-body footer .footerContent {
+body footer .footer-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 35px;
   align-self: center;
 }
-body footer .footerContent .footerContent_mail {
+body footer .footer-content .footer-content-email {
   align-self: center;
   margin-bottom: 95px;
 }
-body footer .footerContent .footerContent_mail p {
+body footer .footer-content .footer-content-email p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -770,7 +807,7 @@ body footer .footerContent .footerContent_mail p {
   text-align: center;
   color: #FFFFFF;
 }
-body footer .footerContent .footerContent_mail p:after {
+body footer .footer-content .footer-content-email p:after {
   content: "";
   display: block;
   position: absolute;
@@ -780,34 +817,34 @@ body footer .footerContent .footerContent_mail p:after {
   margin: 3px 0;
   align-self: center;
 }
-body footer .footerContent .footerContent_adresse {
+body footer .footer-content .footer-content-adresse {
   align-self: center;
   margin-bottom: 95px;
 }
-body footer .footerContent .footerContent_adresse p {
+body footer .footer-content .footer-content-adresse p {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
 }
-body footer .footerContent .footerContent_adresse p:first-child {
+body footer .footer-content .footer-content-adresse p:first-child {
   margin-bottom: 50px;
   color: rgba(217, 217, 217, 0.4);
 }
-body footer .footerSocial {
+body footer .footer-social-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
 }
-body footer .footerSocial .footerSocial_bloc {
+body footer .footer-social-container .footer-social-bloc {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 45px;
 }
-body footer .footerSocial .footerSocial_bloc i {
+body footer .footer-social-container .footer-social-bloc i {
   margin: 0 12px;
 }
 

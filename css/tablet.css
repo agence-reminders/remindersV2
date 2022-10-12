@@ -1,149 +1,183 @@
-body main .heroBannerHP .heroContent {
+body main .hero-banner-home-page .ellipse {
+  width: 320px;
+  height: 320px;
+}
+body main .hero-banner-home-page .hero-title-HP {
   margin: 0 0 85px 0;
   padding: 0 6%;
 }
-body main .heroBannerHP .heroContent .heroBloc1 h3 {
+body main .hero-banner-home-page .hero-title-HP .bloc-hero-1 h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
-body main .heroBannerHP .heroContent .heroBloc2 p {
+body main .hero-banner-home-page .hero-title-HP .bloc-hero2 p {
   font-style: normal;
   font-size: 60px;
   line-height: 70px;
   font-weight: 700;
 }
-body main .heroBannerHP .heroDesc {
+body main .hero-banner-home-page .bloc-hero-description {
   padding: 0 6%;
   align-self: flex-start;
 }
-body main .container .content .blocText {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+body main .work .hero-title-HP {
+  margin: 135px 0 100px;
+  padding: 0 6%;
 }
-body main .container .content .blocText .aboutTxt1 {
-  display: flex;
-  flex-direction: row;
-  padding: 300px 30px;
+body main .m70 {
+  margin-top: 70px;
 }
-body main .container .content .blocText .aboutTxt1 h2 {
-  min-width: 261px;
-  max-width: 300px;
-  padding: 0 14% 0 0;
+body main .bloc-prestation .hero-title-HP .hero-title {
+  margin: 135px 58px 182px 58px !important;
 }
-body main .container .content .blocText .aboutTxt1 p {
-  line-height: 150%;
-  letter-spacing: normal;
-}
-body main .container .content .blocText .aboutTxt2 {
-  display: flex;
-  flex-direction: column;
-  padding: 0 30px;
-}
-body main .container .content .blocText .aboutTxt2 h2 {
-  font-style: normal;
-  font-size: 60px;
-  line-height: 70px;
-  font-weight: 400;
-}
-body main .container .content .blocText .aboutTxt3 {
-  display: flex;
-  flex-direction: column;
-  padding: 0 30px;
-}
-body main .container .content .blocText .aboutTxt3 h2 {
-  font-style: normal;
-  font-size: 60px;
-  line-height: 70px;
-  font-weight: 400;
-}
-body main .container .content .blocText .servicesTxt1 {
-  display: flex;
-  flex-direction: row;
-  padding: 300px 30px;
-}
-body main .container .content .blocText .servicesTxt1 h2 {
-  min-width: 261px;
-  max-width: 300px;
-  padding: 0 14% 0 0;
-}
-body main .container .content .blocText .servicesTxt1 p {
-  line-height: 150%;
-  letter-spacing: normal;
-}
-body main .container .content .splitImg {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-}
-body main .container .content .splitImg .blocA {
-  padding: 20px 20px 40%;
-  transition: transform 0.4s;
-}
-body main .container .content .splitImg .blocA img {
-  max-width: 500px;
-  object-fit: cover;
-}
-body main .container .content .splitImg .blocB {
-  padding: 20px;
-  transition: transform 0.4s;
-}
-body main .container .content .splitImg .blocB img {
-  max-width: 500px;
-  object-fit: cover;
-}
-body main .container .blocD {
-  padding: 0 15% 280px 15%;
-}
-body main .container .right {
-  display: flex;
-  flex-direction: column-reverse !important;
-}
-body main .container .right .blocD {
-  display: flex;
-  flex-direction: column;
-  padding: 0 15% 280px 15%;
-}
-body main .container .right .blocD .blocImg {
-  align-self: flex-end;
-}
-body main .container .blocE {
-  padding: 0 15%;
-}
-body main .container .blocE .blocText {
-  justify-content: flex-start;
-}
-body main .container .blocE .blocText h3 {
-  font-style: normal;
-  font-size: 60px;
-  line-height: 70px;
-  font-weight: 400;
-  padding-bottom: 71px;
-}
-body main .container .blocE .blocText3 {
-  padding: 75px 0;
-}
-body main .container .blocE .blocText3 h4 {
-  max-width: 300px;
-  font-weight: 600;
-  line-height: 100%;
-  letter-spacing: -0.02em;
+body main .bloc-prestation .hero-title-HP .hero-title h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 33px;
 }
-body main .container .blocE .blocText3 p {
+body main .bloc-prestation .hero-title-HP .hero-title p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+body main .container .content .bloc-text {
+  padding: 0 15%;
+  margin: 0 0 80px;
+}
+body main .container .content .bloc-text .bloc-about-text-1 {
+  margin-top: 80px;
+}
+body main .container .content .bloc-text .bloc-about-text-1 h2 {
+  min-width: 261px;
+  max-width: 300px;
+  padding: 0 14% 0 0;
+}
+body main .container .content .bloc-text .bloc-about-text-1 p {
+  line-height: 150%;
+  letter-spacing: normal;
+}
+body main .container .content .bloc-text .bloc-about-text-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+body main .container .content .bloc-text .bloc-about-text-2 h2 {
+  font-style: normal;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 400;
+}
+body main .container .content .bloc-text .bloc-about-txt-3 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+body main .container .content .bloc-text .bloc-about-txt-3 h2 {
+  font-style: normal;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 400;
+}
+body main .container .content .bloc-text .bloc-services-text-1 {
+  margin: 100px 0;
+}
+body main .container .content .bloc-text .bloc-services-text-1 h2 {
+  min-width: 261px;
+  max-width: 300px;
+  padding: 0 14% 0 0;
+}
+body main .container .content .bloc-text .bloc-services-text-1 p {
+  line-height: 150%;
+  letter-spacing: normal;
+}
+body main .container .content .bloc-split-images {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+body main .container .content .bloc-split-images .bloc-a {
+  padding: 20px 20px 30%;
+  transition: transform 0.4s;
+}
+body main .container .content .bloc-split-images .bloc-a img {
+  max-width: 500px;
+  object-fit: cover;
+}
+body main .container .content .bloc-split-images .bloc-b {
+  padding: 20px;
+  transition: transform 0.4s;
+  margin-bottom: 0;
+}
+body main .container .content .bloc-split-images .bloc-b img {
+  max-width: 500px;
+  object-fit: cover;
+}
+body main .container .content .bloc-image-2 {
+  margin: 50px 0;
+}
+body main .container .bloc-f {
+  padding: 0 12%;
+}
+body main .container .bloc-f .bloc-image img {
+  max-width: 300px;
+}
+body main .container .right {
+  display: flex;
+  flex-direction: column-reverse !important;
+}
+body main .container .right .bloc-f {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12%;
+}
+body main .container .right .bloc-f .bloc-image {
+  align-self: flex-end;
+}
+body main .container .right .bloc-f .bloc-image img {
+  max-width: 300px;
+}
+body main .container .right .bloc-f .bloc-text-2 {
+  align-self: self-end;
+}
+body main .container .bloc-e .bloc-text {
+  justify-content: flex-start;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body main .container .bloc-e .bloc-text h3 {
+  font-style: normal;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 400;
+  padding: 0 !important;
+}
+body main .container .bloc-e .bloc-text-3 {
+  padding: 0;
+}
+body main .container .bloc-e .bloc-text-3 h4 {
+  max-width: 300px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  margin-bottom: 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+}
+body main .container .bloc-e .bloc-text-3 p {
   max-width: 398px;
   letter-spacing: normal;
 }
-body main .container .blocF {
+body main .container .bloc-f {
   margin-top: 0 !important;
   padding: 0 15%;
 }
-body main .container .blocF h3 {
+body main .container .bloc-f h3 {
   font-style: normal;
   font-size: 60px;
   line-height: 70px;
@@ -151,40 +185,50 @@ body main .container .blocF h3 {
   opacity: 0.9;
   letter-spacing: -0.05em;
 }
-body main .projetContent {
+body main .projet-content {
   margin: 40px 0;
+}
+body main .projet-content .title-home-page {
+  align-self: flex-start;
   padding: 0 6%;
 }
-body main .projetContent .titleHP {
-  align-self: flex-start;
-}
-body main .projetContent .titleHP p {
+body main .projet-content .title-home-page p {
   font-style: normal;
   font-size: 60px;
   line-height: 70px;
   font-weight: 700;
 }
-body main .projetContent .projectContainer {
+body main .projet-content .bloc-text-4 {
+  padding: 0 6%;
+}
+body main .projet-content .container-projet {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  grid-gap: 10%;
+  grid-gap: 50px;
+  padding: 0 6%;
 }
-body main .projetContent .projectContainer .projectBloc .borderImg {
+body main .projet-content .container-projet .bloc-content-projet .border-images {
   max-width: 324px;
   width: 100%;
 }
-body main .inspiContent {
+body main .bloc-title-inspiration {
   margin: 40px 0;
   padding: 0 6%;
 }
-body main .inspiContent .titleHP {
+body main .bloc-title-inspiration .title-home-page {
   align-self: center;
 }
-body main .inspiContent .titleHP p {
+body main .bloc-title-inspiration .title-home-page p {
   font-style: normal;
   font-size: 60px;
   line-height: 70px;
   font-weight: 700;
+}
+body main .bloc-schema-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
 }
 
 /*# sourceMappingURL=tablet.css.map */

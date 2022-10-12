@@ -2,19 +2,25 @@
 
 body {
   main {
-    .heroBannerHP {
-      .heroContent {
+    .hero-banner-home-page {
+      .ellipse{
+        width: 320px;
+        height: 320px;
+
+
+      }
+      .hero-title-HP {
         margin: 0 0 85px 0;
         padding: 0 6%;
 
-        .heroBloc1 {
+        .bloc-hero-1 {
           h3 {
             @include t18;
 
           }
         }
 
-        .heroBloc2 {
+        .bloc-hero2 {
           p {
             @include t60;
             font-weight: 700;
@@ -26,7 +32,7 @@ body {
         }
       }
 
-      .heroDesc {
+      .bloc-hero-description {
         padding: 0 6%;
         align-self: flex-start;
 
@@ -34,18 +40,46 @@ body {
       }
     }
 
+
+    .work{
+      .hero-title-HP{
+        margin: 135px 0 100px;
+        padding: 0 6%;
+      }
+    }
+
+
+    .m70 {
+      margin-top: 70px;
+    }
+
+    .bloc-prestation {
+      .hero-title-HP {
+        .hero-title {
+          margin: 135px 58px 182px 58px!important;
+
+          h1 {
+            @include t28;
+          }
+
+          p {
+            @include t20;
+
+          }
+        }
+      }
+    }
+
+
     .container {
       .content {
 
-        .blocText {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-evenly;
+        .bloc-text {
+          padding: 0 15%;
+          margin: 0 0 80px;
 
-          .aboutTxt1 {
-            display: flex;
-            flex-direction: row;
-            padding: 300px 30px;
+          .bloc-about-text-1 {
+            margin-top: 80px;
 
             h2 {
               min-width: 261px;
@@ -59,7 +93,7 @@ body {
             }
           }
 
-          .aboutTxt2 {
+          .bloc-about-text-2 {
             display: flex;
             flex-direction: column;
             padding: 0 30px;
@@ -70,7 +104,7 @@ body {
             }
           }
 
-          .aboutTxt3 {
+          .bloc-about-txt-3 {
             display: flex;
             flex-direction: column;
             padding: 0 30px;
@@ -81,10 +115,8 @@ body {
             }
           }
 
-          .servicesTxt1{
-            display: flex;
-            flex-direction: row;
-            padding: 300px 30px;
+          .bloc-services-text-1 {
+            margin: 100px 0;
 
             h2 {
               min-width: 261px;
@@ -99,16 +131,15 @@ body {
 
           }
 
-        ;
         }
 
-        .splitImg {
+        .bloc-split-images {
           display: flex;
           flex-direction: row;
           align-self: center;
 
-          .blocA {
-            padding: 20px 20px 40%;
+          .bloc-a {
+            padding: 20px 20px 30%;
             transition: transform .4s;
 
             img {
@@ -118,9 +149,10 @@ body {
 
           }
 
-          .blocB {
+          .bloc-b {
             padding: 20px;
             transition: transform .4s;
+            margin-bottom: 0;
 
             img {
               max-width: 500px;
@@ -132,13 +164,19 @@ body {
           }
 
         }
+        .bloc-image-2{
+          margin: 50px 0;
+        }
 
 
       }
-      .blocD{
-        padding: 0 15% 280px 15%;
-        .blocImg{
-          img{
+
+      .bloc-f {
+        padding: 0 12%;
+
+        .bloc-image {
+          img {
+            max-width: 300px;
 
           }
 
@@ -150,50 +188,67 @@ body {
         display: flex;
         flex-direction: column-reverse !important;
 
-        .blocD {
+        .bloc-f {
           display: flex;
           flex-direction: column;
-          padding: 0 15% 280px 15%;
+          padding: 0 12%;
 
-          .blocImg {
+          .bloc-image {
+
             align-self: flex-end;
+
+            img {
+              max-width: 300px;
+            }
           }
 
-          .blocText2 {
+          .bloc-text-2 {
+            align-self: self-end;
 
 
           }
         }
       }
-      .blocE{
-        padding: 0 15%;
-        .blocText{
+
+      .bloc-e {
+
+
+        .bloc-text {
           justify-content: flex-start;
-          h3{
+          margin: 0!important;
+          padding: 0 !important;
+
+          h3 {
             @include t60;
             font-weight: 400;
-            padding-bottom: 71px;
+            padding: 0 !important;
           }
         }
-        .blocText3{
-          padding: 75px 0;
-          h4{
+
+        .bloc-text-3 {
+          padding: 0;
+
+          h4 {
             max-width: 300px;
             font-weight: 600;
             line-height: 100%;
             letter-spacing: -.02em;
+            margin-bottom: 100px;
             @include t28;
           }
-          p{
+
+          p {
             max-width: 398px;
             letter-spacing: normal;
           }
         }
       }
-      .blocF{
-        margin-top: 0!important;
+
+      .bloc-f {
+        margin-top: 0 !important;
         padding: 0 15%;
-        h3{
+
+        h3 {
           @include t60;
           font-weight: 400;
           opacity: .9;
@@ -203,13 +258,12 @@ body {
       }
     }
 
-    .projetContent {
+    .projet-content {
       margin: 40px 0;
-      padding: 0 6%;
 
-      .titleHP {
-
+      .title-home-page {
         align-self: flex-start;
+        padding: 0 6%;
 
         p {
           @include t60;
@@ -217,16 +271,20 @@ body {
         }
 
       }
+      .bloc-text-4{
+        padding: 0 6%;
+      }
 
-      .projectContainer {
+      .container-projet {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
-        grid-gap: 10%;
+        grid-gap: 50px;
+        padding: 0 6%;
 
 
-        .projectBloc {
+        .bloc-content-projet {
 
-          .borderImg {
+          .border-images {
             max-width: 324px;
             width: 100%;
 
@@ -240,11 +298,11 @@ body {
       }
     }
 
-    .inspiContent {
+    .bloc-title-inspiration {
       margin: 40px 0;
       padding: 0 6%;
 
-      .titleHP {
+      .title-home-page {
 
         align-self: center;
 
@@ -255,6 +313,10 @@ body {
 
 
       }
+    }
+
+    .bloc-schema-title {
+      @include t40;
     }
 
   }

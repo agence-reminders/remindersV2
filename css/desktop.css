@@ -1,3 +1,169 @@
-
+body main .home-page-container-title .first-title {
+  font-family: "Kiona", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 240px;
+  text-transform: uppercase;
+}
+body main .home-page-container-title .second-title {
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 182px;
+  position: relative;
+  top: -121px;
+  color: #581116;
+}
+body main .hero-banner-home-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+body main .hero-banner-home-page .d-flex-home-page {
+  display: flex;
+  padding-left: 6%;
+}
+body main .hero-banner-home-page .d-flex-home-page img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: none;
+}
+body main .hero-banner-home-page .hero-container-title {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+body main .hero-banner-home-page .hero-container-title .bloc-hero-description {
+  text-align: end;
+}
+body main .projet-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 3%;
+}
+body main .projet-content .container-prestation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body main .projet-content .container-prestation .title-home-page {
+  display: flex;
+  align-self: center;
+}
+body main .projet-content .container-prestation .title-home-page .bloc-second-title {
+  font-family: "Kiona", sans-serif;
+}
+body main .projet-content .container-prestation .container-projet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+body main .projet-content .container-prestation .container-projet .bloc-projet img {
+  width: 100%;
+  max-width: 280px;
+  object-fit: cover;
+  max-height: 580px;
+}
+body main .projet-content .container-prestation .container-projet .bloc-projet h3 {
+  text-align: center;
+}
+body main .projet-content .container-prestation .bloc-projet-btn {
+  margin: 0;
+}
+body main .container-bg img {
+  width: 100%;
+}
+body main .bloc-title-inspiration .title-home-page {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+body main .bloc-title-inspiration .title-home-page p {
+  font-family: "Kiona", sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 84px;
+  text-indent: 20px;
+  letter-spacing: 4px;
+}
+body main .bloc-title-inspiration .title-home-page .bloc-second-title {
+  color: #FFFFFF;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  letter-spacing: 0;
+  font-family: "Kiona", sans-serif;
+  font-size: 70px;
+  line-height: 72px;
+  text-indent: 20px;
+}
+body main .bloc-title-inspiration .container-inspiration {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body main .container .content .bloc-e .d-flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0 15px;
+}
+body main .container .content .bloc-content-schema .count-column {
+  column-count: 2;
+}
+body main .container .content .bloc-g {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 200px 0;
+}
+body main .contactTitle h1 {
+  font-style: normal;
+  font-size: 60px;
+  line-height: 70px;
+}
+body footer .footer-container-title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 6%;
+}
+body footer .footer-container-title .footer-bloc-title {
+  align-self: flex-start;
+}
+body footer .footer-container-title .footer-bloc-title p {
+  text-align: start;
+}
+body footer .footer-container-bottom {
+  display: flex;
+  flex-direction: row;
+  padding: 0 6%;
+  justify-content: space-between;
+}
+body footer .footer-container-bottom .footer-content {
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+body footer .footer-container-bottom .footer-content .footer-content-email {
+  margin-bottom: 50px;
+  align-self: flex-start;
+}
+body footer .footer-container-bottom .footer-content .footer-content-email p {
+  text-align: start;
+}
+body footer .footer-container-bottom .footer-content .footer-content-adresse {
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+body footer .footer-container-bottom .footer-content .footer-content-adresse p {
+  margin-bottom: 25px;
+  text-align: start;
+}
+body footer .footer-container-bottom .footer-social-container .footer-social-bloc {
+  margin-bottom: 0;
+}
 
 /*# sourceMappingURL=desktop.css.map */
