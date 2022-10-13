@@ -141,6 +141,14 @@ body {
   }
 }
 
+.ratio {
+  &-16-9 {
+    padding-bottom: 56.25%;
+  }
+  &-21-9 {
+    padding-bottom: 46.25%;
+  }
+}
 
 .link {
   outline: none;

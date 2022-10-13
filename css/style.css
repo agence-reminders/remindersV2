@@ -18,6 +18,13 @@ body {
   fill: #f7f8fa;
 }
 
+.ratio-16-9 {
+  padding-bottom: 56.25%;
+}
+.ratio-21-9 {
+  padding-bottom: 46.25%;
+}
+
 .link {
   outline: none;
   text-decoration: none;
@@ -863,6 +870,14 @@ body main .bloc-text-5 p {
   line-height: 23px;
   color: rgba(0, 0, 0, 0.8);
 }
+body .parallax {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .parallax img {
+  transform: scale(1.4);
+}
 body footer {
   --color-text: #FFF;
   background-color: black;
@@ -955,6 +970,9 @@ body footer .footer-social-container .footer-social-bloc {
   flex-direction: row;
   justify-content: center;
   margin-bottom: 45px;
+}
+body footer .footer-social-container .footer-social-bloc a {
+  color: var(--color-text);
 }
 body footer .footer-social-container .footer-social-bloc i {
   margin: 0 12px;

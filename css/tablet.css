@@ -18,6 +18,13 @@ body {
   fill: #f7f8fa;
 }
 
+.ratio-16-9 {
+  padding-bottom: 56.25%;
+}
+.ratio-21-9 {
+  padding-bottom: 46.25%;
+}
+
 .link {
   outline: none;
   text-decoration: none;

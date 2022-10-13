@@ -855,6 +855,17 @@ body {
     }
   }
 
+  .parallax {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    img {
+      transform: scale(1.4)
+    }
+
+  }
+
   footer {
     --color-text: #FFF;
     background-color: black;
@@ -946,6 +957,9 @@ body {
         flex-direction: row;
         justify-content: center;
         margin-bottom: 45px;
+        a {
+          color: var(--color-text)
+        }
 
         i {
           margin: 0 12px;
