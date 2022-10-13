@@ -6,6 +6,7 @@
   --red-2: #{$red-2};
   --red-3: #{$red-3};
   --red-4: #{$red-4};
+  --color-text: #000;
 
 }
 
@@ -855,6 +856,7 @@ body {
   }
 
   footer {
+    --color-text: #FFF;
     background-color: black;
     color: #FFFFFF;
     padding-top: 94px;

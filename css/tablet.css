@@ -27,7 +27,7 @@ body {
 }
 .link--rd {
   font-weight: 800;
-  color: #000;
+  color: var(--color-text);
   font-family: "Dosis", sans-serif;
   -webkit-transition: color 0.5s 0.25s;
   transition: color 0.5s 0.25s;
@@ -72,7 +72,7 @@ body {
   position: absolute;
   left: 0;
   width: 100%;
-  color: black;
+  color: var(--color-text);
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
