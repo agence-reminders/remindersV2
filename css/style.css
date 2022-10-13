@@ -916,13 +916,15 @@ body footer .footer-content .footer-content-email p {
   justify-content: center;
   text-align: center;
   color: #FFFFFF;
+  display: inline-block;
+  position: relative;
 }
 body footer .footer-content .footer-content-email p:after {
   content: "";
   display: block;
   position: absolute;
   height: 1px;
-  width: 238px;
+  width: 100%;
   background-color: #FFFFFF;
   margin: 3px 0;
   align-self: center;

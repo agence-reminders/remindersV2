@@ -905,10 +905,11 @@ body {
           justify-content: center;
           text-align: center;
           color: #FFFFFF;
-
+          display: inline-block;
+          position: relative;
           &:after {
             @include line;
-            width: 238px;
+            width: 100%;
             background-color: #FFFFFF;
             margin: 3px 0;
             align-self: center;
