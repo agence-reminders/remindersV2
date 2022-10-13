@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalizer.css" type="text/css">
     <link rel="stylesheet" href="./css/font/fonts.css" type="text/css">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
@@ -45,7 +46,8 @@
 </head>
 
 <body>
-
+<div id="wrapper">
+    <div id="content">
 <header>
     <section class="navbar">
 
@@ -99,53 +101,66 @@
 
 <main>
     <section class="home-page-container-title">
-        <h1 class="first-title">reminders</h1>
-        <h2 class="second-title">Agence web</h2>
+        <h1 class="first-title" data-aos="flip-up">reminders</h1>
+        <div class="second-title-wrapper line-wrapper">
+            <div class="text-wrapper">
+                <span class="line line1"></span>
+                <h2 class="second-title appears--letter-1">Agence web</h2>
+            </div>
+        </div>
     </section>
 
     <section class="hero-banner-home-page">
         <div class="d-flex-home-page">
-            <img src="img/Website-Creator.gif" alt="image">
+            <img src="img/Website-Creator.gif" alt="image" data-aos="fade-up"  data-aos-delay="500">
         </div>
         <div class="hero-container-title">
             <div class="hero-title-HP">
                 <div class="bloc-hero-1">
-                    <h3>Nous le rendons possible</h3>
+                    <h3 data-aos="fade-up"  data-aos-delay="500">Nous le rendons possible</h3>
                 </div>
                 <div class="bloc-hero2">
-                    <p>
+                    <p data-aos="fade-up" data-aos-delay="600">
                         <a class="link link--rd">Site internet</a>
                     </p>
-                    <p><a class="link link--rd">Applications</a></p>
-                    <p><a class="link link--rd">L'image de marque</a></p>
+                    <p data-aos="fade-up" data-aos-delay="1000"><a class="link link--rd">Applications</a></p>
+                    <p data-aos="fade-up" data-aos-delay="1400"><a class="link link--rd">L'image de marque</a></p>
                 </div>
             </div>
-            <div class="bloc-hero-description">
-                <p>Agence Web avec de solide expertise en conception et<br>développement. Nous créeons des site Web
+            <div class="bloc-hero-description" data-aos="fade-up" data-aos-delay="1800">
+                <p>Agence Web avec de solides expertises en conception et<br>développement. Nous créeons des site Web
                     prets à
-                    l’emplois et<br>sur mesure, des applications mobile et élaborons des services<br>commerciaux en
-                    ligne
+                    l’emploi et<br>sur mesure, des applications mobile et pouvons vous suivre pour la création d'une identité graphique ou des détails techniques.
                 </p>
             </div>
         </div>
     </section>
 
     <section class="projet-content">
+        <div class="container">
         <div class="container-prestation">
             <div class="title-home-page">
-                <p class="bloc-second-title">prestation</p>
+                <p class="bloc-second-title" data-aos="fade-up">prestation</p>
             </div>
             <div class="container-projet">
-                <div class="bloc-projet">
-                    <img src="img/pt1.png" alt="">
+                <div class="bloc-projet" data-aos="fade-up">
+                    <div class="hover-wrapper">
+                        <img src="img/pt1.png" alt="">
+                    </div>
                     <h3>Site web</h3>
                 </div>
-                <div class="bloc-projet">
-                    <img src="img/pt3.png" alt="">
+                <div class="bloc-projet" data-aos="fade-up" data-aos-delay="300">
+
+                    <div class="hover-wrapper">
+                        <img src="img/pt3.png" alt="">
+                    </div>
                     <h3>Application</h3>
                 </div>
                 <div class="bloc-projet">
-                    <img src="img/pt2.png" alt="">
+
+                    <div class="hover-wrapper" data-aos="fade-up" data-aos-delay="600">
+                        <img src="img/pt2.png" alt="">
+                    </div>
                     <h3>Branding</h3>
                 </div>
             </div>
@@ -154,48 +169,51 @@
             </div>
         </div>
         <div class="container-prestation-2">
-            <img src="img/bloc-prest3.png" alt="">
+            <div class="image-cont">
+                <img src="img/bloc-prest3.png" alt=""  data-speed="auto">
+            </div>
             <p class="dnone">Tous les projets</p>
+        </div>
         </div>
     </section>
 
-    <section class="container-bg " style="overflow: hidden; ">
+    <section class="container-bg ratio-16-9" style="overflow: hidden; ">
         <div class="parallax" style="">
-            <img src="img/agenceR-panneau.png" alt="">
+            <img src="img/agenceR-panneau.png" alt="" data-speed="auto">
         </div>
     </section>
 
     <section class="bloc-title-inspiration">
         <div class="title-home-page">
-            <p>Nouvelles</p>
-            <p class="bloc-second-title">inpirations</p>
+            <p data-aos="fade-up">Nouvelles</p>
+            <p class="bloc-second-title" data-aos="fade-up" data-aos-delay="300">inpirations</p>
         </div>
         <div class="container-inspiration">
             <div class="bloc-content-inspiration">
-                <div class="border-images">
-                    <a href="https://livemicarino.com/" target="_blank"><img src="img/proto1.jpeg" alt="image"></a>
+                <div class="border-images" data-aos="fade-up" data-aos-delay="">
+                    <a href="https://livemicarino.com/" target="_blank" class="hover-wrapper"><img src="img/proto1.jpeg" alt="image"></a>
                 </div>
-                <div class="bloc-description-inspiration">
-                    <h3>MICA RINO</h3>
-                    <p>by Matchbox Studio</p>
-                </div>
-            </div>
-            <div class="bloc-content-inspiration">
-                <div class="border-images">
-                    <a href="https://sfo.vc/en/" target="_blank"><img src="img/proto2.png" alt="image"></a>
-                </div>
-                <div class="bloc-description-inspiration">
-                    <h3>SFO</h3>
-                    <p>by Markus Brandenburg</p>
+                <div class="bloc-description-inspiration" data-aos="fade-up" data-aos-delay="100">
+                    <h3 data-aos="fade-up" data-aos-delay="200">MICA RINO</h3>
+                    <p  data-aos="fade-up" data-aos-delay="300">by Matchbox Studio</p>
                 </div>
             </div>
             <div class="bloc-content-inspiration">
-                <div class="border-images">
-                    <a href="https://jonathanalpeyrie.com/" target="_blank"><img src="img/proto3.jpeg" alt="image"></a>
+                <div class="border-images" data-aos="fade-up" data-aos-delay="400">
+                    <a href="https://sfo.vc/en/" target="_blank" class="hover-wrapper"><img src="img/proto2.png" alt="image"></a>
                 </div>
                 <div class="bloc-description-inspiration">
-                    <h3>Jonathan Alpeyrie</h3>
-                    <p>by DigitalDesign.NYC</p>
+                    <h3 data-aos="fade-up" data-aos-delay="500">SFO</h3>
+                    <p data-aos="fade-up" data-aos-delay="600">by Markus Brandenburg</p>
+                </div>
+            </div>
+            <div class="bloc-content-inspiration">
+                <div class="border-images" data-aos="fade-up" data-aos-delay="700">
+                    <a href="https://jonathanalpeyrie.com/" target="_blank" class="hover-wrapper"><img src="img/proto3.jpeg" alt="image"></a>
+                </div>
+                <div class="bloc-description-inspiration">
+                    <h3 data-aos="fade-up" data-aos-delay="800">Jonathan Alpeyrie</h3>
+                    <p data-aos="fade-up" data-aos-delay="900">by DigitalDesign.NYC</p>
                 </div>
             </div>
         </div>
@@ -203,15 +221,19 @@
 </main>
 
 <footer>
+    <div class="footer--wrapper">
     <section class="footer-container-title">
         <div class="footer-bloc-title">
-            <p>Vous avez une idée ?<br>Dites nous en plus</p>
+            <p>Vous avez une idée ?<br>Dites-nous en plus</p>
         </div>
     </section>
     <section class="footer-container-bottom">
         <div class="footer-content">
             <div class="footer-content-email ">
                 <p><a href="mailto: sas.reminders@gmail.com" class="link link--rd">sas.reminders@gmail.com</a></p>
+                <br>
+                <br>
+                <p><a class="link link--rd">07 61 30 57 01</a></p>
             </div>
             <div class="footer-content-adresse">
                 <p>2 residence des chênes<br>verts,16100 Cognac</p>
@@ -225,9 +247,9 @@
                 <a href="mailto: sas.reminders@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-xl"></i></a>
             </div>
         </div>
-    </section>
+    </section></div>
 </footer>
-
+</div></div>
 <div class="cursor">
     <div class="cursor__ball cursor__ball--big ">
         <svg height="30" width="30">
@@ -242,6 +264,12 @@
     </div>
 </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/gsap.scrollsmoother.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 <script src="js/hamburger.js"></script>
 <script src="js/index.js"></script>

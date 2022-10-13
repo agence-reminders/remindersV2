@@ -9,7 +9,62 @@
   --color-text: #000;
 
 }
+.hover-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: block;
 
+  img {
+    transition: 0.5s ease;
+    transform: none;
+  }
+  &:before {
+    transition: 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    opacity: 0;
+    background: rgba(0,0,0, 0.3);
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: 1;
+  }
+
+  &:hover img {
+    transform: scale(1.05) rotate(2deg);
+  }
+  &:hover:before {
+    opacity: 1;
+  }
+}
+.text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 3px;
+    background-color: var(--primary-color);
+    transform-origin: 0 50%;
+  }
+
+  .line1 {
+    bottom: 7px;
+    left: 0;
+  }
+
+  .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+}
 body {
   font-family: 'Roboto', sans-serif;
   padding: 0;
@@ -19,9 +74,6 @@ body {
 
   header {
     margin-bottom: 20px;
-    .dnone{
-      display: none!important;
-    }
 
     .navbar {
       display: flex;
@@ -242,14 +294,18 @@ body {
         text-transform: uppercase;
 
       }
+
+      .second-title-wrapper {
+        transform: translateY(-107px)
+      }
       .second-title{
         font-family: 'roboto', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 38px;
-        line-height: 182px;
+        line-height: 1;
         position: relative;
-        top: -175px;
+
         color: #581116;
       }
     }
@@ -606,6 +662,7 @@ body {
         padding: 0 25px;
         margin-bottom: 115px;
         align-self: center;
+        max-width: 750px;
 
         p {
           @include t20;
@@ -615,8 +672,10 @@ body {
     }
 
     .projet-content {
-      @include d-flexCenter;
-      margin: 40px 25px;
+      .container {
+        @include d-flexCenter;
+        margin: 40px 25px;
+      }
 
       .title-home-page {
         @include titleHP;
@@ -636,7 +695,15 @@ body {
         flex-direction: column;
         justify-content: center;
         align-self: center;
-        padding: 0 10%;
+        /*padding: 0 10%;*/
+
+        .bloc-projet {
+          margin-bottom: 15Px;
+          h3 {
+            text-align: center;
+            margin-top: 15Px;
+          }
+        }
 
         .bloc-content-projet {
           @include d-flexCenter;
@@ -657,7 +724,6 @@ body {
 
             }
           }
-
           .bloc-projet-description {
             display: flex;
             align-self: center;
@@ -708,6 +774,7 @@ body {
 
       .container-inspiration {
         .bloc-content-inspiration {
+          text-align: center;
           @include d-flexCenter;
           align-content: center;
           margin-bottom: 40px;
@@ -856,21 +923,45 @@ body {
   }
 
   .parallax {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    img {
-      transform: scale(1.4)
-    }
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
 
   }
+  .container-bg {
+    position: relative;
+  }
+  .container-prestation-2,
+  .container-prestation
+  {
+    width: 100%
+  }
+  .image-cont {
+    position: relative;
+    max-width: 750px;
 
+    overflow: hidden;
+    width: 100%;
+    height: 80vh;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 120%;
+      object-fit: cover;
+      bottom: 0;
+    }
+  }
   footer {
     --color-text: #FFF;
     background-color: black;
     color: #FFFFFF;
     padding-top: 94px;
+    .footer--wrapper {
+      transition: 0.5s ease;
+    }
 
 
     .footer-container-title {
@@ -958,7 +1049,11 @@ body {
         justify-content: center;
         margin-bottom: 45px;
         a {
-          color: var(--color-text)
+          transition: 0.2s ease;
+          color: var(--color-text);
+          &:hover {
+            color: var(--primary-color);
+          }
         }
 
         i {

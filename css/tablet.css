@@ -18,6 +18,10 @@ body {
   fill: #f7f8fa;
 }
 
+.dnone {
+  display: none !important;
+}
+
 .ratio-16-9 {
   padding-bottom: 56.25%;
 }
@@ -29,7 +33,7 @@ body {
   outline: none;
   text-decoration: none;
   position: relative;
-  line-height: 1;
+  line-height: 1.2;
   display: inline-block;
 }
 .link--rd {
@@ -40,7 +44,7 @@ body {
   transition: color 0.5s 0.25s;
   overflow: hidden;
 }
-.link--rd:hover {
+.link--rd:hover, .link--rd.hover {
   -webkit-transition: none;
   transition: none;
   color: transparent;
@@ -61,7 +65,7 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
-.link--rd:hover::before {
+.link--rd:hover::before, .link--rd.hover:before {
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
 }
@@ -75,7 +79,6 @@ body {
 }
 .link--rd span:before {
   content: attr(data-letters);
-  color: red;
   position: absolute;
   left: 0;
   width: 100%;
@@ -96,7 +99,7 @@ body {
   -webkit-transform: translate3d(0, -100%, 0);
   transform: translate3d(0, -100%, 0);
 }
-.link--rd:hover span::before {
+.link--rd:hover span::before, .link--rd.hover span::before {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
   -webkit-transform: translate3d(0, 0, 0);

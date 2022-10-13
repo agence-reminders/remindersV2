@@ -141,6 +141,10 @@ body {
   }
 }
 
+.dnone{
+  display: none!important;
+}
+
 .ratio {
   &-16-9 {
     padding-bottom: 56.25%;
@@ -154,7 +158,7 @@ body {
   outline: none;
   text-decoration: none;
   position: relative;
-  line-height: 1;
+  line-height: 1.2;
   display: inline-block;
 
   &--rd {
@@ -165,7 +169,7 @@ body {
     -webkit-transition: color 0.5s 0.25s;
     transition: color 0.5s 0.25s;
     overflow: hidden;
-    &:hover {
+    &:hover, &.hover {
       -webkit-transition: none;
       transition: none;
       color: transparent;
@@ -186,7 +190,7 @@ body {
       -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
       transition-timing-function: cubic-bezier(0.7,0,0.3,1);
     }
-    &:hover::before {
+    &:hover::before, &.hover:before {
       -webkit-transform: translate3d(100%,0,0);
       transform: translate3d(100%,0,0);
     }
@@ -202,7 +206,6 @@ body {
       &:before {
 
         content: attr(data-letters);
-        color: red;
         position: absolute;
         left: 0;
         width: 100%;
@@ -226,7 +229,7 @@ body {
         transform: translate3d(0,-100%,0);
       }
     }
-    &:hover span::before {
+    &:hover span::before, &.hover span::before {
       -webkit-transition-delay: 0.3s;
       transition-delay: 0.3s;
       -webkit-transform: translate3d(0,0,0);
