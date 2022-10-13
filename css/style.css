@@ -116,6 +116,10 @@ body {
   --color-text: #000;
 }
 
+.cursor {
+  display: none;
+}
+
 .hover-wrapper {
   position: relative;
   overflow: hidden;

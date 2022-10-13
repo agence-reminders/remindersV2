@@ -116,6 +116,10 @@ body {
   height: 70px;
 }
 
+.cursor {
+  display: block;
+}
+
 body main .home-page-container-title .first-title {
   font-family: "Kiona", sans-serif;
   font-style: normal;
