@@ -685,10 +685,11 @@ body {
 
         p {
           @include inTitle;
+          font-family: 'Kiona', sans-serif;
         }
 
         .bloc-second-title {
-          @include stroke;
+
 
         }
       }
