@@ -1,9 +1,19 @@
+@import "vars";
 @import "library";
+
+:root {
+  --primary-color: #{$primary};
+  --red-2: #{$red-2};
+  --red-3: #{$red-3};
+  --red-4: #{$red-4};
+
+}
 
 body {
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
+  background: white;
 
 
   header {
