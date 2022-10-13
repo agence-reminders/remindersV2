@@ -166,8 +166,8 @@ body {
     font-weight: 800;
     color: var(--color-text);
     font-family: 'Dosis', sans-serif;
-    -webkit-transition: color 0.5s 0.25s;
-    transition: color 0.5s 0.25s;
+    -webkit-transition: color 0.5s 0.5s;
+    transition: color 0.5s 0.5s;
     overflow: hidden;
     &:hover, &.hover {
       -webkit-transition: none;
