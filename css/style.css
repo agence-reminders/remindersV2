@@ -83,8 +83,8 @@ body {
   left: 0;
   width: 100%;
   color: var(--color-text);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
 }
 .link--rd span:nth-child(2) {
   top: 50%;
