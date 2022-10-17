@@ -86,6 +86,9 @@ body {
       .bloc-logo {
         display: flex;
         margin: auto;
+        img{
+          width: 120px;
+        }
       }
 
       .bloc-navbar {

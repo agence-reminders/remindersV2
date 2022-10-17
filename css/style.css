@@ -191,6 +191,9 @@ body header .navbar .bloc-logo {
   display: flex;
   margin: auto;
 }
+body header .navbar .bloc-logo img {
+  width: 120px;
+}
 body header .navbar .bloc-navbar {
   display: flex;
   align-items: center;
