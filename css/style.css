@@ -374,7 +374,8 @@ body main .home-page-container-title {
   justify-content: center;
   text-align: center;
   align-items: center;
-  color: #AD1327;
+  /*color: #AD1327;*/
+  color: var(--red-2);
 }
 body main .home-page-container-title .first-title {
   font-family: "Kiona", sans-serif;
@@ -394,7 +395,8 @@ body main .home-page-container-title .second-title {
   font-size: 38px;
   line-height: 1;
   position: relative;
-  color: #581116;
+  /*color: #581116;*/
+  color: var(--primary-color);
 }
 body main .hero-Banner {
   display: flex;

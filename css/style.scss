@@ -290,7 +290,8 @@ body {
       justify-content: center;
       text-align: center;
       align-items: center;
-      color: #AD1327;
+      /*color: #AD1327;*/
+      color: var(--red-2);
       .first-title{
         font-family: 'Kiona', sans-serif;
         font-style: normal;
@@ -312,7 +313,8 @@ body {
         line-height: 1;
         position: relative;
 
-        color: #581116;
+        /*color: #581116;*/
+        color: var(--primary-color);
       }
     }
     /*  generique */
