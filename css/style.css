@@ -188,7 +188,7 @@ body header .navbar .bloc-logo {
   margin: auto;
 }
 body header .navbar .bloc-logo img {
-  width: 120px;
+  width: 60px;
 }
 body header .navbar .bloc-navbar {
   display: flex;
@@ -711,7 +711,7 @@ body main .hero-banner-home-page .bloc-hero-description {
 body main .hero-banner-home-page .bloc-hero-description p {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 23px;
 }
 body main .projet-content .container {
