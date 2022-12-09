@@ -39,7 +39,7 @@ body {
 .link--rd {
   font-weight: 800;
   color: var(--color-text);
-  font-family: "Dosis", sans-serif;
+  font-family: "Roboto", sans-serif;
   transition: color 0.5s 0.5s;
   overflow: hidden;
 }
@@ -210,7 +210,7 @@ body main .bloc-title-inspiration .title-home-page p {
   letter-spacing: 8.5px;
 }
 body main .bloc-title-inspiration .title-home-page .bloc-second-title {
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   letter-spacing: 0;

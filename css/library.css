@@ -39,7 +39,7 @@ body {
 .link--rd {
   font-weight: 800;
   color: var(--color-text);
-  font-family: "Dosis", sans-serif;
+  font-family: "Roboto", sans-serif;
   transition: color 0.5s 0.5s;
   overflow: hidden;
 }
