@@ -87,7 +87,7 @@ body {
         display: flex;
         margin: auto;
         img{
-          width: 120px;
+          width: 60px;
         }
       }
 
@@ -652,6 +652,7 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
+          font-family: Georgia, 'Times New Roman', Times, serif;
 
           p {
             font-weight: 700;
