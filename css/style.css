@@ -693,6 +693,7 @@ body main .hero-banner-home-page .hero-title-HP .bloc-hero2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 body main .hero-banner-home-page .hero-title-HP .bloc-hero2 p {
   font-weight: 700;
