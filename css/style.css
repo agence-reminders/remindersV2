@@ -1,11 +1,11 @@
-/** $primary: #5a0101 !default; **/
 /** halloween
 $primary: #E94E1B !default;
 $red-2: #F38F20 !default;
 $red-3: #F3B55E !default;
 $red-4: #976D6F !default;
-**/
-/** noel **/
+
+noel 
+$primary: #005436 !default;**/
 /**** cursor ***/
 body {
   cursor: none;
@@ -47,7 +47,7 @@ body {
 .link--rd {
   font-weight: 800;
   color: var(--color-text);
-  /*font-family: 'Dosis', sans-serif;*/
+  font-family: "Roboto", sans-serif;
   transition: color 0.5s 0.5s;
   overflow: hidden;
 }
@@ -105,7 +105,7 @@ body {
 }
 
 :root {
-  --primary-color: #005436;
+  --primary-color: #5a0101;
   --red-2: #9F272D;
   --red-3: #B25257;
   --red-4: #976D6F;
@@ -188,7 +188,7 @@ body header .navbar .bloc-logo {
   margin: auto;
 }
 body header .navbar .bloc-logo img {
-  width: 60px;
+  width: 90px;
 }
 body header .navbar .bloc-navbar {
   display: flex;
