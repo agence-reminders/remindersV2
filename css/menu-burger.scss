@@ -39,7 +39,7 @@ body{
                         top: 0;
                         left: 0;
                         display: flex;
-                        padding-top: 200px;
+                        padding-top: 150px;
                         box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
                         height: 100vh;
                         width: 100%;
@@ -66,20 +66,6 @@ body{
                             padding: 0.7rem;
                             position: relative;
 
-                                // &:before  {
-                                //     content: '';
-                                //     display: block;
-                                //     background: url(../img/arrow_menu.png) center ;
-                                //     background-size: cover;
-                                //     height: 50px;
-                                //     width: 180px;
-                                //     position: absolute;
-                                //     right: -268px;
-                                //     top: 52%;
-                                //     transform: translateY(-40%);
-                                //     opacity: 0;
-                                //     transition: 0.5s ease;
-                                // }
                                 .lettre1{
                                     width: 465px;
                                     height: 200px;
@@ -87,6 +73,22 @@ body{
                                     position: absolute;
                                     top: -61px;
                                     left:-190px;
+
+                                        &:before  {
+                                            content: '';
+                                            display: block;
+                                            background: url(../img/arrow_menu.png) center ;
+                                            background-size: cover;
+                                            height: 50px;
+                                            width: 180px;
+                                            position: absolute;
+                                            right: -40px;
+                                            top: 65%;
+                                            transform: translateY(-40%);
+                                            opacity: 0;
+                                            transition: 0.5s ease;
+                                        }
+
                                     .h{
                                         position: absolute;
                                         top: 50px;
@@ -132,10 +134,11 @@ body{
                                     }
                                     .e{
                                         transform: rotate3d(0,1,0,180deg);
-                                    }
-                                  
-                                   
+                                    }  
                                 }
+                                .lettre1:hover:before  {
+                                        opacity: 1;
+                                    }
 
                                 .lettre{
                                     width: 465px;
@@ -145,6 +148,20 @@ body{
                                     top: -61px;
                                     left:-233px;
                                     
+                                    &:before  {
+                                        content: '';
+                                        display: block;
+                                        background: url(../img/arrow_menu.png) center ;
+                                        background-size: cover;
+                                        height: 50px;
+                                        width: 180px;
+                                        position: absolute;
+                                        right: -115px;
+                                        top: 65%;
+                                        transform: translateY(-40%);
+                                        opacity: 0;
+                                        transition: 0.5s ease;
+                                    }
 
 
                                     .a{
@@ -202,6 +219,9 @@ body{
                                         transform: rotate3d(0,1,0,180deg);
                                     }
                                 }
+                                .lettre:hover:before  {
+                                    opacity: 1;
+                                }
 
                                 .lettre2{
                                     width: 465px;
@@ -210,6 +230,21 @@ body{
                                     position: absolute;
                                     top: -61px;
                                     left:-248px;
+
+                                    &:before  {
+                                        content: '';
+                                        display: block;
+                                        background: url(../img/arrow_menu.png) center ;
+                                        background-size: cover;
+                                        height: 50px;
+                                        width: 180px;
+                                        position: absolute;
+                                        right: -185px;
+                                        top: 65%;
+                                        transform: translateY(-40%);
+                                        opacity: 0;
+                                        transition: 0.5s ease;
+                                    }
                                     .c{
                                         position: absolute;
                                         top: 50px;
@@ -285,15 +320,16 @@ body{
                                         transform: rotate3d(0,1,0,180deg);
                                     }
                                 }
+                                .lettre2:hover:before  {
+                                    opacity: 1;
+                                }
                             }
                             a:hover{
                                 font-weight: bolder;
                                 color:#9F272D  ;
                                 
                                 }
-                                // a:hover:before  {
-                                //     opacity: 1;;
-                                // }
+                                
                         }
                         
                     }

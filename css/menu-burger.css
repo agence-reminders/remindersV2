@@ -33,7 +33,7 @@ body header nav .navbar .nav-container .menu-items {
   top: 0;
   left: 0;
   display: flex;
-  padding-top: 200px;
+  padding-top: 150px;
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
   height: 100vh;
   width: 100%;
@@ -67,6 +67,20 @@ body header nav .navbar .nav-container .menu-items li a .lettre1 {
   position: absolute;
   top: -61px;
   left: -190px;
+}
+body header nav .navbar .nav-container .menu-items li a .lettre1:before {
+  content: "";
+  display: block;
+  background: url(../img/arrow_menu.png) center;
+  background-size: cover;
+  height: 50px;
+  width: 180px;
+  position: absolute;
+  right: -40px;
+  top: 65%;
+  transform: translateY(-40%);
+  opacity: 0;
+  transition: 0.5s ease;
 }
 body header nav .navbar .nav-container .menu-items li a .lettre1 .h {
   position: absolute;
@@ -108,6 +122,9 @@ body header nav .navbar .nav-container .menu-items li a .lettre1:hover .m {
 body header nav .navbar .nav-container .menu-items li a .lettre1:hover .e {
   transform: rotate3d(0, 1, 0, 180deg);
 }
+body header nav .navbar .nav-container .menu-items li a .lettre1:hover:before {
+  opacity: 1;
+}
 body header nav .navbar .nav-container .menu-items li a .lettre {
   width: 465px;
   height: 200px;
@@ -115,6 +132,20 @@ body header nav .navbar .nav-container .menu-items li a .lettre {
   position: absolute;
   top: -61px;
   left: -233px;
+}
+body header nav .navbar .nav-container .menu-items li a .lettre:before {
+  content: "";
+  display: block;
+  background: url(../img/arrow_menu.png) center;
+  background-size: cover;
+  height: 50px;
+  width: 180px;
+  position: absolute;
+  right: -115px;
+  top: 65%;
+  transform: translateY(-40%);
+  opacity: 0;
+  transition: 0.5s ease;
 }
 body header nav .navbar .nav-container .menu-items li a .lettre .a {
   position: absolute;
@@ -166,6 +197,9 @@ body header nav .navbar .nav-container .menu-items li a .lettre:hover .u {
 body header nav .navbar .nav-container .menu-items li a .lettre:hover .t {
   transform: rotate3d(0, 1, 0, 180deg);
 }
+body header nav .navbar .nav-container .menu-items li a .lettre:hover:before {
+  opacity: 1;
+}
 body header nav .navbar .nav-container .menu-items li a .lettre2 {
   width: 465px;
   height: 200px;
@@ -173,6 +207,20 @@ body header nav .navbar .nav-container .menu-items li a .lettre2 {
   position: absolute;
   top: -61px;
   left: -248px;
+}
+body header nav .navbar .nav-container .menu-items li a .lettre2:before {
+  content: "";
+  display: block;
+  background: url(../img/arrow_menu.png) center;
+  background-size: cover;
+  height: 50px;
+  width: 180px;
+  position: absolute;
+  right: -185px;
+  top: 65%;
+  transform: translateY(-40%);
+  opacity: 0;
+  transition: 0.5s ease;
 }
 body header nav .navbar .nav-container .menu-items li a .lettre2 .c {
   position: absolute;
@@ -243,6 +291,9 @@ body header nav .navbar .nav-container .menu-items li a .lettre2:hover .c2 {
 }
 body header nav .navbar .nav-container .menu-items li a .lettre2:hover .t2 {
   transform: rotate3d(0, 1, 0, 180deg);
+}
+body header nav .navbar .nav-container .menu-items li a .lettre2:hover:before {
+  opacity: 1;
 }
 body header nav .navbar .nav-container .menu-items li a:hover {
   font-weight: bolder;
